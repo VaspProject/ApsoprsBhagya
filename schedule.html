@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Apsoprs</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Themefisher Font -->  
+  <link href="plugins/themefisher-font/style.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Magnific Popup -->
+  <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <!-- Slick Carousel -->
+  <link href="plugins/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick/slick-theme.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <!-- In <head> -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+	
+  <!-- FAVICON -->
+  <link href="images/Capture.PNG" rel="shortcut icon">
+
+  <style>
+	.navbar img
+	{
+		max-width: 100px;
+	}
+
+    .table tbody tr:hover {
+      background-color: #f8f9fa;
+      transition: background-color 0.3s ease;
+    }
+    .table tbody tr:hover th,
+    .table tbody tr:hover td {
+      color: #4c0a30;
+      transition: color 0.3s ease;
+    }
+    .image-block {
+      text-align: center;
+      padding: 30px;
+      /* background: #fff; */
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-block:hover {
+      transform: translateY(-5px);
+    }
+
+    .image-wrapper {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 10px;
+      background: linear-gradient(45deg, #df7117, #e55a11);
+      box-shadow: 0 5px 15px rgba(223, 113, 23, 0.3);
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+    }
+
+    .image-content {
+      margin-top: 25px;
+    }
+
+    .image-content h2 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .image-content h3 {
+      font-size: 1.2rem;
+      color: #df7117;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .image-wrapper {
+        width: 200px;
+        height: 200px;
+      }
+    }
+	* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 600px; /* Fixed height for container */
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures images maintain aspect ratio while filling container */
+  object-position: center; /* Centers the image */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  border-radius: 0 0 5px 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* 
+.active, .dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slideshow-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    height: 300px;
+  }
+}
+
+    .ticket {
+      display: inline-flex;
+      align-items: center;
+      background: #df7117;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin-left: 20px;
+    }
+
+    .ticket:hover {
+      background: #e55a11;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(223, 113, 23, 0.3);
+      text-decoration: none;
+    }
+
+    .ticket span {
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 991px) {
+      .ticket {
+        margin: 15px 0;
+        justify-content: center;
+      }
+    }
+  </style>
+  
+<style>
+body {
+  background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9); /* White overlay with 90% opacity */
+  z-index: -1;
+}
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-center {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-center img {
+  width: 17%;
+  max-height: 86px;
+}
+</style>
+</head>
+
+<body class="body-wrapper">
+	<!-- <div id="myModal" class="modal fade ">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Comming Soon</h5>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<p>this is the demo.</p> -->
+					<!-- <form>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Name">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder="Email Address">
+						</div>
+						<button type="submit" class="btn btn-primary">Subscribe</button>
+					</form> -->
+
+<!-- <img src="images/sponserlogo/venu2.png" class="img-fluid">				</div>
+			</div>
+		</div>
+	</div> -->
+<!--========================================
+=            Navigation Section            =
+=========================================-->
+
+<div class="header-top">
+  <div class="container-fluid">
+    <div class="logo-container">
+      <div class="logo-left">
+        <img src="images/Capture.PNG" alt="Left Logo">
+      </div>
+      <div class="logo-center">
+        <img src="images/Top-center-Kamkhya-pic-for-Header.png" alt="Center Logo">
+      </div>
+      <div class="logo-right">
+        <img src="images/logo2.png" alt="Right Logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar main-nav border-less navbar-expand-lg p-0">
+  <div class="container-fluid p-0">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="committe.html">Committee </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="apsoprs-india-grp.html">APSOPRS India Group - Organizing Committee</a>
+            <a class="dropdown-item" href="loc.html">Local Organizing Committee</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="schedule.html">Registration</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="conference-registration.html">Conference Registration </a>
+            <a class="dropdown-item" href="workshop-only.html">Workshop Registration</a>
+            <a class="dropdown-item" href="workshop-only.html">Offline Form </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="abstract.html">Abstract</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Scientific Program</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Program at a Glance</a>
+            <a class="dropdown-item" href="#">Full Program</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="travel.html">Tour</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="accommodation.html">Accommodation</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">General Information</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="about-venue.html">About Venue</a>
+            <a class="dropdown-item" href="go-to-venue.html">Go to Venue</a>
+            <a class="dropdown-item" href="visa-information.html">Visa Information</a>
+            <a class="dropdown-item" href="useful-information.html">Useful Information</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Downloads</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Conference Brochure</a>
+            <a class="dropdown-item" href="#">Sponsor's Brochure</a>
+            <a class="dropdown-item" href="#">Exhibition floor plan</a>
+            <a class="dropdown-item" href="#">Offline Registration form</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<script>
+    // Add scroll effect to navbar
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+<!--====  End of Navigation Section  ====-->
+
+
+
+<!--================================
+=            Page Title            =
+=================================-->
+
+<section class="page-title bg-title" style="background: url('images/Subbanner.jpg'); 
+                                            background-size: cover; 
+                                            background-position: center; 
+                                            position: relative; 
+                                            top: 147px;
+                                            padding: 26px; 
+                                            height: 577px;">
+  <div class="container h-100">
+    <div class="row h-100 align-items-end justify-content-end text-end">
+      <div class="col-12 col-md-6" style="position: relative;
+    bottom: 63px;">
+        <div class="title">
+          <h3 style="font-size: 2.3rem;">Registration</h3> 
+        </div>
+        <ol class="breadcrumb p-0 m-0 justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Registration</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  @media (max-width: 768px) {
+  .page-title {
+    height: 350px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    height: 150px !important;
+    padding: 16px;
+  }
+
+  .page-title h3 {
+    font-size: 1.5rem;
+  }
+}
+  
+</style>
+
+<!--====  End of Page Title  ====-->
+
+
+<!--==============================
+=            Schedule            =
+===============================-->
+
+<section class="section registration-details" style="margin-top: 124px; padding: 57px; ">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Registration <span class="alternate">Details</span></h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<thead class="thead-dark">
+							<tr>
+                <th scope="col">Category</th>
+                <th scope="col">Early Bird (till 15th November 2025)</th>
+                <th scope="col">16th November to 31st Match 2026</th>
+                <th scope="col">1st April – 31st October 2026 </th>
+                <th scope="col">Spot Registration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">APSOPRS / YPSOR Members</th>
+                <td>INR 12000/- + 18% tax</td>
+                <td>INR 14000/- + 18% tax</td>
+                <td>INR 16000/- + 18% tax</td>
+                <td>INR 20000/- + 18% tax</td>
+              </tr>
+              <tr>
+                <th scope="row">OPAI Members</th>
+                <td>INR 12000/- + 18% tax</td>
+                <td>INR 14000/- + 18% tax</td>
+                <td>INR 16000/- + 18% tax</td>
+                <td>INR 20000/- + 18% tax</td>
+              </tr>
+              <tr>
+                <th scope="row">Non Members</th>
+                <td>INR 14000/- + 18% tax</td>
+                <td>INR 16000/- + 18% tax</td>
+                <td>INR 18000/- + 18% tax</td>
+                <td>INR 22000/- + 18% tax</td>
+              </tr>
+              <tr>
+                <th scope="row">Accompany Person</th>
+                <td>INR 10000/- + 18% tax</td>
+                <td>INR 12000/- + 18% tax</td>
+                <td>INR 14000/- + 18% tax</td>
+                <td>INR 18000/- + 18% tax</td>
+              </tr>
+              <tr>
+                <th scope="row">Indian Residence</th>
+                <td>INR 10000/- + 18% tax</td>
+                <td>INR 12000/- + 18% tax</td>
+                <td>INR 14000/- + 18% tax</td>
+                <td>INR 18000/- + 18% tax</td>
+              </tr>
+              <tr>
+                <th scope="row">International Delegates</th>
+                <td>USD 350</td>
+                <td>USD 400 </td>
+                <td>USD 450</td>
+                <td>USD 500</td>
+              </tr>
+              <tr>
+                <th scope="row">International Residence</th>
+                <td>USD 250</td>
+                <td>USD 300 </td>
+                <td>USD 350</td>
+                <td>USD 400</td>
+              </tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="mt-4">
+					<p><b>Please Note:</b>  18% tax applicable extra on all mentioned rates</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--==============================
+=            Registration Form            =
+===============================-->
+
+<section class="section registration-form">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Registration <span class="alternate">Form</span></h3>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="row">
+			<div class="col-12">
+				<form class="registration-form" action="#" method="POST">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="registrationCategory">Registration Category *</label>
+								<select class="form-control" id="registrationCategory" name="registrationCategory" required>
+									<option value="">Select Category</option>
+									<option value="APSOPRS/YAPSOPRS member">APSOPRS/YAPSOPRS member</option>
+									<option value="PSOPRS member">PSOPRS member</option>
+									<option value="Both APSOPRS and PSOPRS member">Both APSOPRS and PSOPRS member</option>
+									<option value="Nonmember">Nonmember</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="specialty">What is your specialty? *</label>
+								<select class="form-control" id="specialty" name="specialty" required>
+									<option value="">Select Specialty</option>
+									<option value="Oculoplastic Surgeon">Oculoplastic Surgeon</option>
+									<option value="Non-oculoplastic ophthalmologist">Non-oculoplastic ophthalmologist</option>
+									<option value="Oculoplastics Fellow in Training">Oculoplastics Fellow in Training</option>
+									<option value="Ophthalmology Resident">Ophthalmology Resident</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="course">Course *</label>
+								<select class="form-control" id="course" name="course" required>
+									<option value="">Select Course</option>
+									<option value="Full Course - Oculoplastic Surgeon/Fellow">Full Course - Oculoplastic Surgeon/Fellow (Subject to availability of slots)</option>
+									<option value="Full Course - Non-oculoplastic Surgeon">Full Course - Non-oculoplastic Surgeon (Subject to availability of slots starting February 23, 2025)</option>
+									<option value="Didactics Only Course - In person">Didactics Only Course - In person</option>
+									<option value="Didactics Only Course - online">Didactics Only Course - online</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="fallbackOption">Should the slots be full for the hands-on training, would you like to consider enrolling in the didactics-only course instead? *</label>
+								<select class="form-control" id="fallbackOption" name="fallbackOption" required>
+									<option value="">Select Option</option>
+									<option value="Yes - In person">Yes. Sign me up for the in person didactics course if there are available slots.</option>
+									<option value="Yes - Online">Yes. Sign me up for the online didactics course</option>
+									<option value="No">No. Cancel my registration</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="amount">Registration Amount *</label>
+								<input type="text" class="form-control" id="amount" name="amount" readonly>
+								<small class="form-text text-muted">Amount will be calculated based on your registration category and timing</small>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="paymentMode">Preferred Mode of Payment *</label>
+								<select class="form-control" id="paymentMode" name="paymentMode" required>
+									<option value="">Check your preferred mode of payment</option>
+									<option value="Credit card">Credit card (secure payment)</option>
+									<option value="International bank transfer">International bank transfer</option>
+									<option value="QRPh/GCash/Bank Transfer">QRPh/GCash/Bank Transfer (for Philippine registrants only)</option>
+								</select>
+							</div>
+						</div>
+					</div> -->
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="title">Title *</label>
+								<select class="form-control" id="title" name="title" required>
+									<option value="">Select Title</option>
+									<option value="Dr">Dr</option>
+									<option value="Mr">Mr</option>
+									<option value="Mrs">Mrs</option>
+									<option value="Ms">Ms</option>
+									<option value="Prof">Prof</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="firstName">First Name *</label>
+								<input type="text" class="form-control" id="firstName" name="firstName" required>
+							</div>
+						</div>
+						<!-- <div class="col-md-4">
+							<div class="form-group">
+								<label for="middleName">Middle Name</label>
+								<input type="text" class="form-control" id="middleName" name="middleName">
+							</div>
+						</div> -->
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="lastName">Last Name *</label>
+								<input type="text" class="form-control" id="lastName" name="lastName" required>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="email">Email ID *</label>
+								<input type="email" class="form-control" id="email" name="email" required>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="countryCode">Country Code *</label>
+								<select class="form-control" id="countryCode" name="countryCode" required>
+									<option value="">Select Code</option>
+									<option value="+91">+91 (India)</option>
+									<option value="+1">+1 (USA/Canada)</option>
+									<option value="+44">+44 (UK)</option>
+									<option value="+61">+61 (Australia)</option>
+									<option value="+86">+86 (China)</option>
+									<!-- Add more country codes as needed -->
+								</select>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="form-group">
+								<label for="phone">WhatsApp/Mobile Number *</label>
+								<input type="tel" class="form-control" id="phone" name="phone" required>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="country">Country of Practice *</label>
+								<select class="form-control" id="country" name="country" required>
+									<option value="">Select Country</option>
+									<option value="India">India</option>
+									<option value="USA">United States</option>
+									<option value="UK">United Kingdom</option>
+									<option value="Australia">Australia</option>
+									<option value="Canada">Canada</option>
+									 Add more countries as needed -->
+								<!-- </select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="hospital">Hospital Affiliation *</label>
+								<input type="text" class="form-control" id="hospital" name="hospital" required>
+							</div>
+						</div>
+					</div> --> 
+					<!-- <div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="city">City *</label>
+								<input type="text" class="form-control" id="city" name="city" required>
+							</div>
+						</div> -->
+						<!-- <div class="col-md-6">
+							<div class="form-group">
+								<label for="designation">Designation *</label>
+								<input type="text" class="form-control" id="designation" name="designation" required>
+							</div>
+						</div> 
+					</div> -->
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label for="nonMemberCountry">Address</label>
+								<textarea class="form-control" id="nonMemberCountry" name="nonMemberCountry" rows="3"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 text-center">
+							<button type="submit" class="btn btn-main-md">CLICK FOR REGISTRATION</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--==============================
+=            Registration Guidelines            =
+===============================-->
+
+<section class="section registration-guidelines" style="padding: 0px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h3>Registration <span class="alternate">Guidelines</span></h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="guidelines-content">
+					<h4>APSOPRS Registration Fee includes:</h4>
+					<ul class="list-unstyled">
+						<li class="guideline-list-item"><i class="fa fa-check-circle text-primary"></i> Admission to all scientific sessions</li>
+						<li class="guideline-list-item"><i class="fa fa-check-circle text-primary"></i> Admission to the exhibition</li>
+						<li class="guideline-list-item"><i class="fa fa-check-circle text-primary"></i> Admission to Lunch during the event</li>
+						<li class="guideline-list-item"><i class="fa fa-check-circle text-primary"></i> Daily Coffee Breaks</li>
+						<li class="guideline-list-item"><i class="fa fa-check-circle text-primary"></i> Certificate of Attendance</li>
+						<li class="guideline-list-item"><i class="fa fa-check-circle text-primary"></i> Gala Dinner</li>
+					</ul>
+
+					<h4 class="mt-4">Payment Method</h4>
+					<ul class="list-unstyled">
+						<li class="guideline-list-item"><i class="fa fa-info-circle text-primary"></i> Payment by credit card is available only through the on-line registration system.</li>
+						<li class="guideline-list-item"><i class="fa fa-info-circle text-primary"></i> The following credit cards will be accepted Visa, Master card, American Express.</li>
+            <li class="guideline-list-item"><i class="fa fa-info-circle text-primary"></i> All fees are quoted in USD for international delegates</li>
+					</ul>
+
+					<h4 class="mt-4">Cancellation & Refund Policy</h4>
+					<ul class="list-unstyled">
+						<li class="guideline-list-item"><i class="fa fa-exclamation-circle text-primary"></i> If applicants need to change the information or cancel
+              the registration, it must be submitted in writing via email to the Secretariat :
+              <a href="mailto:apsoprs2026@gmail.com"
+                 class="text-primary"
+                 style="text-decoration: none; cursor: pointer;     margin-left: 18px;"
+                 >
+                 apsoprs2026@gmail.com
+              </a>
+						<li class="guideline-list-item"><i class="fa fa-exclamation-circle text-primary"></i> All refunds will be processed in 30 days after the completion of the conference  according to the following:</li>
+						<li class="guideline-list-item ml-4"><i class="fa fa-times-circle text-primary"></i>After 23:59 (IST), Oct 18th 2026 registration cancellation request will not be accepted</li>
+            <li class="guideline-list-item ml-4"><i class="fa fa-times-circle text-primary"></i>For inquire, please contact the APSOPRS 2026 secretariat <a href="mailto:apsoprs2026@gmail.com"
+              class="text-primary">(apsoprs2026@gmail.com </a>// Call us : <a href="tel:+91 7002053239"
+              class="text-primary">+91 7002053239)</a></li>
+					</ul>
+
+					<!-- <div class="contact-info mt-4">
+						<p><strong>For inquiries, please contact the APSOPRS 2026 secretariat:</strong></p>
+						<p><i class="fa fa-envelope"></i> Email: <a href="mailto:apsoprs2026@gmail.com">apsoprs2026@gmail.com</a></p>
+						<p><i class="fa fa-phone"></i> Call us: <a href="tel:+9100000000">+91 00000000</a></p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Registration Guidelines  ====-->
+
+<!--==============================================
+=            Call to Action Subscribe            =
+===============================================-->
+
+<!-- <section class="cta-subscribe bg-subscribe overlay-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mr-auto">
+				<!-- Subscribe Content -->
+				<!-- <div class="content">
+					<h3>Subscribe to Our <span class="alternate">Newsletter</span></h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor</p>
+				</div>
+			</div>
+			<div class="col-md-6 ml-auto align-self-center"> -->
+				<!-- Subscription form -->
+				<!-- <form action="#" class="row">
+					<div class="col-lg-8 col-md-12">
+						<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="subscribe-button">
+							<button class="btn btn-main-md">Subscribe</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section> --> -->
+
+<!--====  End of Call to Action Subscribe  ====-->
+
+<!--================================
+=            Google Map            =
+=================================-->
+
+<!-- <section class="map">
+	 Google Map -->
+	<!-- <div id="map"></div>
+	<div class="address-block">
+		<h4>Docklands Convention</h4>
+		<ul class="address-list p-0 m-0">
+			<li><i class="fa fa-home"></i><span>1201 Park Street, Fifth Avenue, <br>Dhanmondy, Dhaka.</span></li>
+			<li><i class="fa fa-phone"></i><span>[88] 657 524 332</span></li>
+		</ul>
+		<a href="#" class="btn btn-white-md">Get Direction</a>
+	</div>
+</section> --> 
+<section class="map-section" style=" padding: 0px; ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.1856792269914!2d91.9022612744753!3d26.12548819347922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375af7ea68401b3f%3A0x8ebf32605f4b8358!2sMayfair%20Spring%20Valley%20Resort%2C%20Guwahati!5e0!3m2!1sen!2sin!4v1748328337022!5m2!1sen!2sin"
+          style="width: 100%; height: 468px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="col-md-6 p-0">
+        <img src="images/maps/mapimge.jpg" class="img-fluid w-100 h-100" style="object-fit: cover;" alt="Alternate Text">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--====  End of Google Map  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+
+   <!-- Footer -->
+   <footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <div class="footer-block">
+            <h4><i class="fa fa-building"></i> Conference Secretariat</h4>
+            <div class="footer-content">
+              <p>APSOPRS 2026 Guwahati</p>
+              <p>Sri Sankaradeva Nethralaya</p>
+              <p>#96, Basistha Road, Guwahati 781028, Assam</p>
+              <p><a href="mailto:apsoprs2026@gmail.com"><i class="fa fa-envelope"></i> apsoprs2026@gmail.com</a></p>
+              <p><i class="fa fa-phone"></i> + 91 7002053239 </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <div class="footer-block">
+            <h4><i class="fa fa-users"></i> Conference Manager</h4>
+            <div class="footer-content">
+              <img src="images/icon/Exotic-Logo.png" alt="Exotic Holidays Logo" style="max-width: 120px; margin-bottom: 10px;">
+              <p>Exotic Holidays & Events</p>
+              <p>Beltola Tiniali, Guwahati - 781028 Assam</p>
+              <p><a href="mailto:info@exoticnortheast.com"><i class="fa fa-envelope"></i> info@exoticnortheast.com</a></p>
+              <p><i class="fa fa-phone"></i> +91 9864045457 </p>
+              <p><i class="fa fa-phone"></i> +91 9864326057</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer-block">
+            <h4><i class="fa fa-headset"></i> Quick Contact</h4>
+            <div class="footer-content">
+              <ul class="contact-list">
+                <li>
+                  <strong><i class="fa fa-ticket"></i> Registration Query:</strong>
+                  <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> +91 9256887793  </p>
+                    <!-- <p><a href="mailto:registration@abc.com"><i class="fa fa-envelope"></i> registration@abc.com</a></p> -->
+                  </div>
+                </li>
+                <li>
+                  <strong><i class="fa fa-bed"></i> Accommodation Query:</strong>
+                  <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> +91 6002803669 </p>
+                    <!-- <p><a href="mailto:exotic@abc.com"><i class="fa fa-envelope"></i> exotic@abc.com</a></p> -->
+                  </div>
+                </li>
+                <!-- <li>
+                  <strong><i class="fa fa-store"></i> Exhibitors Query:</strong>
+                  <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> +91 00000000</p>
+                    <p><a href="mailto:abcd@abcd.com"><i class="fa fa-envelope"></i> abcd@abcd.com</a></p>
+                  </div>
+                </li> -->
+                <li>
+                  <strong><i class="fa fa-bus"></i> Tours & Transport Query:</strong>
+                  <div class="contact-info">
+                    <p><i class="fa fa-phone"></i>+91 8638650930 </p>
+                    <!-- <p><a href="mailto:abcd@abcd.com"><i class="fa fa-envelope"></i> abcd@abcd.com</a></p> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Subfooter -->
+  <footer class="subfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="copyright-text">
+            <p>© 2025 APSOPRS 2026. All Rights Reserved</p>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="social-links text-right">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="policy-links text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="terms-conditions.html">Terms & Conditions</a></li>
+              <li class="list-inline-item"><a href="refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <style>
+     .footer-main {
+      padding-top: 38px ;
+      padding-bottom: 0px;
+      background-color: #4c0a30;
+      color: #fff;
+    }
+    
+    .footer-block {
+      margin-bottom: 30px;
+      height: 100%;
+    }
+    
+    .footer-block h4 {
+      color: #e6ace6;
+      margin-bottom: 25px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #e6ace6;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .footer-block h4 i {
+      font-size: 1.4rem;
+    }
+    
+    .footer-content {
+      min-height: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .footer-block p {
+      margin-bottom: 12px;
+      color: white;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    .footer-block a {
+      color:  #e6ace6;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .footer-block a:hover {
+      color: #fff;
+    }
+    
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .contact-list li {
+      margin-bottom: 20px;
+    }
+    
+    .contact-list strong {
+      color: #e6ace6;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+    
+    .contact-list p {
+      margin: 5px 0;
+      padding-left: 25px;
+    }
+    
+    .social-links ul {
+      margin: 0;
+    }
+    
+    .social-links a {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-left: 15px;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      color: #df7117;
+      transform: translateY(-3px);
+    }
+    
+    .subfooter {
+      padding: 10px 0;
+      background-color: #111;
+      color: #fff;
+    }
+    
+    .copyright-text p {
+      margin: 0;
+      color: #ccc;
+    }
+    
+    @media (max-width: 768px) {
+      .footer-content {
+        min-height: auto;
+      }
+      
+      .social-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .copyright-text {
+        text-align: center;
+      }
+      
+      .footer-block {
+        margin-bottom: 40px;
+      }
+    }
+    
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 25px;
+      margin-top: 8px;
+    }
+    
+    .contact-info p {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .contact-info a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    @media (max-width: 576px) {
+      .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+    }
+    
+    .policy-links {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .policy-links ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .policy-links li {
+      margin: 0 15px;
+    }
+    
+    .policy-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    
+    .policy-links a:hover {
+      color: #df7117;
+    }
+    
+    @media (max-width: 576px) {
+      .policy-links li {
+        margin: 5px 10px;
+        display: inline-block;
+      }
+    }
+    </style>
+  
+  <!-- JAVASCRIPTS -->
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="plugins/isotope/mixitup.min.js"></script>
+  <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/custom.js"></script>
+  
+  <!-- Slider Script (if slides exist) -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      if (slides.length === 0) return; // Exit if no slides
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+  
+  <!-- AOS Initialization -->
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  
+  <!-- Modal Auto-Show (if modal exists) -->
+  <script>
+    $(document).ready(function(){
+      if ($("#myModal").length) {
+        $("#myModal").modal('show');
+      }
+    });
+  </script>
+  </body>
+  </html>

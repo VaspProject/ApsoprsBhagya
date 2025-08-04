@@ -1,0 +1,400 @@
+/* Common Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Table Styles */
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover th,
+.table tbody tr:hover td {
+  color: #8e1179;
+  transition: color 0.3s ease;
+}
+
+/* Image Block Styles */
+.image-block {
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-block:hover {
+  transform: translateY(-5px);
+}
+
+.image-wrapper {
+  width: 261px;
+  height: 272px;
+  margin: 0 auto;
+  border-radius: 65%;
+  /* padding: 10px; */
+  /* background: #4c0a30;
+  box-shadow: 0 5px 15px rgba(223, 113, 23, 0.3); */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  /* border: 9px solid #fff; */
+}
+
+.image-content {
+  margin-top: 25px;
+}
+
+.image-content h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.image-content h3 {
+  font-size: 1.2rem;
+  color: #4c0a30;
+  font-weight: 500;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 600px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  border: 3px solid #8e1179;
+  overflow: hidden;
+  box-shadow: 0 10px 30px #8e1179;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 5px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* 
+.active,
+.dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* Ticket Styles */
+.ticket {
+  display: inline-flex;
+  align-items: center;
+  background: #8e1179 !important;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+
+.ticket:hover {
+  background: #ca86bf !important;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(223, 113, 23, 0.3);
+  text-decoration: none;
+}
+
+.ticket span {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Countdown Styles */
+.countdown-section {
+  padding: 0px 0;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 43vh;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
+      background-size: cover;
+}
+
+.coming-soon-text {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.circular-countdown {
+  position: relative;
+  z-index: 3;
+}
+
+.live-countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+}
+
+.countdown-item-live {
+  text-align: center;
+}
+
+.countdown-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #8e1179;
+  /* background: url('images/icon/Countdownimg.png'); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgb(34 17 3 / 82%);
+  transition: transform 0.3s ease;
+  /* border: 2px solid purple; */
+}
+
+.countdown-circle:hover {
+  transform: translateY(-5px);
+}
+
+.countdown-number-live {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: none;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.countdown-label-live {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: none;
+  line-height: 1.2;
+}
+
+.countdown-separator {
+  font-size: 3rem;
+  color: #8e1179;
+  margin: 0 15px;
+  align-self: center;
+  line-height: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .ticket {
+    margin: 15px 0;
+    justify-content: center;
+  }
+}
+
+/* Media Queries for Mobile Devices */
+
+/* Small mobile devices (e.g., iPhone SE, smaller Androids, up to 360px width) */
+@media only screen and (max-width: 360px) {
+  .countdown-section {
+    min-height: 16vh; /* Slightly smaller for compact screens */
+  }
+}
+
+/* Medium mobile devices (e.g., iPhone XR, iPhone 11, Pixel, 361px to 414px) */
+@media only screen and (min-width: 361px) and (max-width: 414px) {
+  .countdown-section {
+    min-height: 19vh; /* Specified for iPhone XR and similar */
+  }
+}
+
+/* Larger mobile devices (e.g., iPhone 12 Pro Max, Galaxy Note, 415px to 576px) */
+@media only screen and (min-width: 415px) and (max-width: 576px) {
+  .countdown-section {
+    min-height: 22vh; /* Slightly taller for larger mobile screens */
+  }
+}
+
+/* Tablets and larger devices (above 576px, fallback to default or adjust if needed) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .countdown-section {
+    min-height: 30vh; /* Adjusted for tablets */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .slideshow-container {
+    height: 400px;
+  }
+
+  .coming-soon-text {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .live-countdown {
+    gap: 20px;
+  }
+
+  .countdown-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .countdown-number-live {
+    font-size: 2.2rem;
+  }
+
+  .countdown-label-live {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+
+  .countdown-separator {
+    font-size: 2.5rem;
+    margin: 0 10px;
+    color: #0e43d9;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    height: 300px;
+  }
+
+  .coming-soon-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .live-countdown {
+    gap: 0px;
+  }
+
+  .countdown-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .countdown-number-live {
+    font-size: 1.8rem;
+  }
+
+  .countdown-label-live {
+    font-size: 0.7rem;
+    color: #fff;
+  }
+
+  .countdown-separator {
+    font-size: 2rem;
+    margin: 0 8px;
+    color: #0e43d9;
+  }
+} 

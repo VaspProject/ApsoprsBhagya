@@ -1,0 +1,355 @@
+/* Header Styles */
+.navbar img {
+  max-width: 100px;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); */
+  transition: all 0.3s ease-in-out;
+  padding: 15px 0;
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.98);
+}
+
+.navbar-brand img {
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled .navbar-brand img {
+  height: 40px;
+}
+
+.navbar-nav {
+  gap: 5px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Open dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  margin-top: 0;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 7px 11px !important;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+}
+
+.nav-link i {
+  font-size: 1.1em;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #e99adc;
+  color: #8e1179 !important;
+}
+
+.nav-link:hover i {
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(128, 0, 128, 0.678), purple);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+.nav-item.active .nav-link {
+  color: #4c0a30 !important;
+  background: rgb(221, 187, 221);
+}
+
+.nav-item.active .nav-link::after {
+  width: 80%;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  display: none;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 0;
+  animation: fadeInDown 0.3s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: #e99adc;
+  color: #4c0a30;
+}
+
+.dropdown-item i {
+  font-size: 1.1em;
+  color: #4c0a30;
+}
+
+/* Contact Button */
+.nav-button .btn-primary {
+  background: linear-gradient(45deg, #df7117, #e55a11);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-button .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(223, 113, 23, 0.3);
+}
+
+.nav-button .btn-primary i {
+  font-size: 1.1em;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+  body {
+    padding-top: 150px;
+  }
+
+  .header-top {
+    padding: 5px 0;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .logo-left, .logo-right {
+    height: 60px;
+  }
+
+  .navbar {
+    top: 80px;
+  }
+
+  .navbar-collapse {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    gap: 5px;
+  }
+
+  .nav-link {
+    padding: 12px 15px !important;
+    border-radius: 8px;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+    animation: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background: rgba(223, 113, 23, 0.05);
+  }
+
+  .nav-item.dropdown-item .dropdown-menu {
+    /* display: none; */
+   
+   
+      background: #e99adc;
+      color: #4c0a30;
+    }
+    
+    
+      
+  }
+
+  .nav-item.dropdown.show .dropdown-menu {
+    /* display: block; */
+  }
+
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 130px;
+  }
+
+  .header-top {
+    padding: 3px 0;
+  }
+
+  .logo-container {
+    padding: 5px;
+  }
+
+  .logo-left, .logo-right {
+    height: 50px;
+  }
+
+  .navbar {
+    top: 243px;
+  }
+}
+
+/* Add any other header-specific styles here */
+
+.header-top {
+  background: white;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-left, .logo-right {
+  height: 74px;
+  width: auto;
+}
+
+.logo-left img, .logo-right img {
+  height: 113%;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Dropdown hover behavior */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .dropdown-menu {
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    animation: fadeInDown 0.3s ease;
+  }
+
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+  }
+
+  .nav-link.dropdown-toggle::after {
+    display: none;
+  }
+}
+
+/* ==============================================
+   ✅ ADDED: Fixes for mobile toggler + logos
+   ============================================== */
+
+/* Navbar toggler icon color so it's visible on white bg */
+.navbar-toggler .fa {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Optional: style the toggler button itself for visibility */
+.navbar-toggler {
+  border: 1px solid #333;
+  background-color: #f8f8f8;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* Mobile logos stacked vertically & smaller */
+@media (max-width: 767.98px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo-container img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  /* Dropdown menus should be full width and visible under toggler */
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-item {
+    padding-left: 25px;
+  }
+}
