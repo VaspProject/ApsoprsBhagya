@@ -229,41 +229,41 @@ body::before {
   </script>
 
 
-<style>
-  /* Popup container */
+<!-- <style>
+  
   .popup {
-      display: flex; /* Visible by default */
+      display: flex; 
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+      background-color: rgba(0, 0, 0, 0.8); 
       z-index: 9999;
       justify-content: center;
       align-items: center;
   }
 
-  /* Popup content */
+ 
   .popup-content {
       position: relative;
       background-color: #8e1179;
       padding: 20px;
       border-radius: 10px;
       width: 80%;
-      max-width: 800px; /* Standard size */
-      max-height: 80vh; /* Limit height for responsiveness */
+      max-width: 800px;
+      max-height: 80vh; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
-  /* Video styling */
+  
   .popup-video {
       width: 100%;
       height: auto;
       border-radius: 8px;
   }
 
-  /* Close button */
+  
   .close-btn {
       position: absolute;
       top: -15px;
@@ -287,7 +287,7 @@ body::before {
 
   @media screen and (max-width: 768px) {
             .popup-content {
-                width: 90%; /* Wider on tablets */
+                width: 90%; 
                 padding: 15px;
             }
             .close-btn {
@@ -301,11 +301,11 @@ body::before {
 
         @media screen and (max-width: 480px) {
             .popup-content {
-                width: 95%; /* Almost full width on mobile */
+                width: 95%; 
                 padding: 10px;
             }
             .popup-video {
-                max-height: 60vh; /* Smaller height for mobile */
+                max-height: 60vh;
             }
             .close-btn {
                 top: -8px;
@@ -315,7 +315,7 @@ body::before {
                 font-size: 14px;
             }
         }
-</style>
+</style> -->
 
   <!--====  End of Navigation Section  ====-->
 
@@ -339,7 +339,7 @@ body::before {
 	</div>
 </section> -->
 <!-- Popup container -->
-<div class="popup" id="videoPopup">
+<!-- <div class="popup" id="videoPopup">
   <div class="popup-content">
       <button class="close-btn" onclick="closePopup()">×</button>
       <video class="popup-video" autoplay muted controls>
@@ -347,19 +347,19 @@ body::before {
           Your browser does not support the video tag.
       </video>
   </div>
-</div>
-
+</div> -->
+<!-- 
 <script>
-  // Function to close the popup
+   Function to close the popup
   function closePopup() {
       document.getElementById("videoPopup").style.display = "none";
-      // Pause the video when closing
+       Pause the video when closing
       document.querySelector(".popup-video").pause();
   }
   window.onload = function() {
             document.querySelector(".popup-video").play();
         };
-</script>
+</script> -->
   <section class="banner bg-banner-one ">
     <div class="container">
       <div class="row align-items-center">
@@ -462,6 +462,45 @@ body::before {
         }
   
 
+
+
+        
+        .star-container {
+  position: absolute;
+  top: -55px; /* Adjust as needed */
+  /* right: -20px; Adjust as needed */
+  cursor: pointer;
+  z-index: 10;
+  animation: blink 1s infinite;
+  left: -37px;
+}
+
+.star {
+  width: 252px;
+  height: 222px;
+  background: gold;
+  clip-path: polygon(41% 8%, 30% 23%, 8% 18%, 19% 38%, 7% 56%, 29% 52%, 28% 74%, 40% 56%, 63% 63%, 53% 42%, 68% 28%, 45% 29%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.star .text {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 62px;
+  left: -34px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
   </style>
 
 
@@ -485,7 +524,16 @@ body::before {
             <h2 class="gradient-text">Countdown begins</h2>
           </div>
           <div class="circular-countdown">
+            
             <div class="live-countdown">
+              
+              <div class="star-container" onclick="window.location.href='https://youtu.be/0nhff7sjMZ4'">
+                <div class="star">
+                  <div class="text">Click to watch <br>Videos</div>
+                </div>
+              </div>
+              
+            
               <div class="countdown-item-live">
                 <div class="countdown-circle">
                   <div class="countdown-number-live" id="days">524</div>
