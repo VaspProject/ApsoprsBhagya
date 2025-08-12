@@ -468,42 +468,54 @@ body::before {
         .star-container {
   position: absolute;
   top: -55px; /* Adjust as needed */
-  /* right: -20px; Adjust as needed */
+  left: -63px;
   cursor: pointer;
   z-index: 10;
   animation: blink 1s infinite;
-  left: -37px;
 }
 
 .star {
+  position: relative;
   width: 252px;
   height: 222px;
-  background: gold;
-  clip-path: polygon(41% 8%, 30% 23%, 8% 18%, 19% 38%, 7% 56%, 29% 52%, 28% 74%, 40% 56%, 63% 63%, 53% 42%, 68% 28%, 45% 29%);
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 10px;
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #8e1179;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  );
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
- 
+  transform: rotate(45deg); /* Permanent rotation */
 }
 
 .star .text {
   font-size: 14px;
-  color: #000;
   font-weight: bold;
   text-align: center;
   padding: 5px;
-  position: absolute;
-  top: 62px;
-  left: -34px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  top: 0px;
 }
 
+/* Blink effect for the whole container */
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
-  </style>
-
+</style>
 
   <!--====  End of Banner  ====-->
 
@@ -530,7 +542,7 @@ body::before {
               
               <div class="star-container" onclick="window.location.href='https://youtu.be/0nhff7sjMZ4'">
                 <div class="star">
-                  <div class="text">Click to watch <br>Videos</div>
+                  <div class="text">Click to<br> Watch Videos</div>
                 </div>
               </div>
               
