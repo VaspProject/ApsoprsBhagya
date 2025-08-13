@@ -380,7 +380,8 @@ body::before {
       </div>
     </div>
   </section>
-  <style>
+
+<style>
   
     .banner .row {
       display: flex;
@@ -429,7 +430,7 @@ body::before {
     }
 
     
-        .scroll-container {
+.scroll-container {
             width: 100%;
             overflow: hidden;
             background-color: #8e1179;
@@ -465,7 +466,7 @@ body::before {
 
 
         
-        .star-container {
+.star-container {
   position: absolute;
   top: -55px; /* Adjust as needed */
   left: -63px;
@@ -482,9 +483,17 @@ body::before {
   align-items: center;
   justify-content: center;
   bottom: 10px;
+  background: #8e1179;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 50% 70%, 
+    21% 91%, 32% 57%, 2% 35%, 
+    39% 35%
+  );
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.star::before {
+/* .star::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -496,8 +505,9 @@ body::before {
     39% 35%
   );
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transform: rotate(45deg); /* Permanent rotation */
-}
+  transform: rotate(45deg); /* Permanent rotation
+}  */
+
 
 .star .text {
   font-size: 14px;
@@ -542,7 +552,7 @@ body::before {
               
               <div class="star-container" onclick="window.location.href='https://youtu.be/0nhff7sjMZ4'">
                 <div class="star">
-                  <div class="text">Click to<br> Watch Videos</div>
+                  <div class="text">Click here<br> for Videos</div>
                 </div>
               </div>
               
@@ -3309,14 +3319,14 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                 <a href="#"><i class="fab fa-facebook"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
               </li>
               <li class="list-inline-item">
                 <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
-              <li class="list-inline-item">
+              <!-- <li class="list-inline-item">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
