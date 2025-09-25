@@ -31,6 +31,22 @@
   <link href="images/Capture.PNG" rel="shortcut icon">
 
   <style>
+    body {
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.1; /* adjust visibility */
+    z-index: -1;
+}
     
     .logo-container {
   display: flex;
@@ -175,6 +191,8 @@
   </nav>
 </header>
 
+
+
 <!--====  End of Navigation Section  ====-->
 
 
@@ -183,17 +201,17 @@
 =            Page Title            =
 =================================-->
 
-<section class="page-title bg-title" style="background: url('images/subbanners/useful-info.png'); background-size: cover; background-position: center; position: relative; padding: 26px; height: 420px;  top: -6px;">
+<section class="page-title bg-title" style="background: url('images/subbanners/Opai.png'); background-size: cover; background-position: center; position: relative; padding: 26px; height: 420px; top: -6px;">
   <div class="container h-100">
     <div class="row h-100 align-items-end justify-content-end text-end">
       <!-- <div class="col-12 col-md-6" style="position: relative;
-      bottom: 44px;">
+    bottom: 44px;">
         <div class="title">
-          <h3 style="font-size: 1rem; margin-bottom: 0px;">Useful Information</h3>
+          <h3 style="font-size: 1rem; margin-bottom: 0px;">Offline Form</h3>
         </div>
         <ol class="breadcrumb p-0 m-0 justify-content-center">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Useful Information</li>
+          <li class="breadcrumb-item active">Offline Form</li>
         </ol>
       </div> -->
     </div>
@@ -210,7 +228,7 @@
   .page-title {
     height: 150px !important;
     padding: 16px;
-    top: 99px !important;
+    top: 151px !important;
   }
 
   .page-title h3 {
@@ -219,530 +237,102 @@
 }
   
 </style>
+
 <!--====  End of Page Title  ====-->
 
- <!--===========================
-  =       Useful Information   =
-  ============================-->
-  <section class="section useful-info">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="content-block">
-            <!-- <div class="image-block">
-              <img class="img-fluid" src="https://via.placeholder.com/600x400" alt="Guwahati City">
-            </div> -->
-            <h2>Useful Information for <span class="alternate">APSOPRS 2026 Attendees</span></h2>
-            <p>
-              To ensure a smooth and enjoyable experience during your visit to Guwahati for the APSOPRS 2026 conference, we have compiled essential 
-              information about the local climate, currency, payment options, electricity, and emergency contacts. This guide will help you prepare 
-              for your stay at the Mayfair Spring Valley Resort and navigate the city with ease.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-12">
-          <div class="content-block">
-            <h3>Climate & Weather</h3>
-            <p>
-              Guwahati enjoys pleasantly warm and comfortable weather in November, ideal for the APSOPRS 2026 conference. Average temperatures range 
-              from a high of 27°C (81°F) to a low of 16°C (61°F), with mild days and cool nights. Light clothing is recommended for daytime, along 
-              with a light jacket or sweater for evenings.
-            </p>
-          </div>
-          <div class="content-block">
-            <h3>Indian Currency</h3>
-            <p>
-              Indian rupee is the currency of India. The rupee's currency code is INR.
-            </p>
-            <div class="image-grid d-flex flex-column flex-md-row gap-4">
-  
-              <div class="text-center">
-                <img src="images/icon/indiancurrency.png" alt="Indian Rupee Notes">
-                <p>Sample 1</p>
-              </div>
-            
-              <div class="text-center">
-                <img src="images/icon/india.png" alt="Indian Rupee Coins">
-                <p>Sample 2</p>
-              </div>
-            
-            </div>
-          </div>
-          <div class="content-block">
-            <h3>Credit Card</h3>
-            <p>
-              Credit cards are commonly accepted across India, especially in major urban centers and popular tourist spots such as hotels, department 
-              stores, shopping malls, and restaurants. While major brands like Visa, MasterCard, and American Express are widely usable, it is advisable
-              to confirm acceptance with individual merchants in advance. For transactions at smaller businesses or in rural areas, it is prudent to 
-              carry alternative payment options like debit cards or cash. Additionally, notifying your bank of your travel plans can help prevent any 
-              transaction issues.
-            </p>
-          </div>
-          <div class="content-block">
-            <h3>Money Exchange</h3>
-            <p>
-              In India, you can exchange your foreign currency into Indian Rupees (INR) at banks, authorized currency exchange centers, or foreign 
-              exchange counters. Before exchanging, check if old or damaged currency notes are accepted, and verify the exchange rates and fees. 
-              Ensure you have valid travel documents and identification, and consider exchanging at authorized centers to avoid issues or scams.
-            </p>
-          </div>
-          <div class="content-block">
-            <h3>Currency Converter</h3>
-            <p>
-              For real-time currency conversion, you can use online tools like the one provided by XE. Visit <a href="https://www.xe.com/currencyconverter/" target="_blank">XE Currency Converter</a> to check the latest exchange rates for INR and plan your budget accordingly.
-            </p>
-          </div>
-          <div class="content-block">
-            <h3>Electricity and Voltage</h3>
-            <p>
-              In India, the standard voltage is 230 volts at 50 Hertz, and outlets typically have three round pins or a combination of round and flat 
-              pins. If your devices aren't compatible, you can purchase a travel adapter at airports, electronics stores, or online, or ask your 
-              hotel's front desk if they have adapters available for guests.
-            </p>
-            <div class="power-plug-grid d-flex flex-column flex-md-row gap-4">
-              <div class="text-center">
-                <img src="images/icon/plug.png" alt="Indian Power Outlet">
-                <p>Sample 1</p>
-              </div>
-              <div class="text-center">
-                <img src="images/icon/plug2.png" alt="Travel Adapter">
-                <p>Sample 2</p>
-              </div>
-              <div class="text-center">
-                <img src="images/icon/plug3.png" alt="Power Plug">
-                <p>Sample 3</p>
-              </div>
-            </div>
-          </div>
-          <div class="content-block">
-            <h3>Emergency & Useful Phone Numbers</h3>
-            <ul>
-              <li><strong>Police Department:</strong> 100</li>
-              <li><strong>Fire Department:</strong> 101</li>
-              <li><strong>Medical Emergencies:</strong> 102 or 108 (varies by state)</li>
-              <li><strong>Emergency Services (Multi-utility):</strong> 112 (available in many states, similar to 911)</li>
-            </ul>
-            <!-- <p>
-              Save these numbers in your phone for quick access during your stay in Guwahati. The Mayfair Spring Valley Resort staff can also assist 
-              with emergencies.
-            </p> -->
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
+
+<section class="coming-soon">
+    <h1>Coming Soon</h1>
+    <!-- <p>We're working hard to launch our new website.<br>Please stay tuned!</p> -->
   </section>
-  <!--====  End of Useful Information  ====-->
 
 
-
-  <style>
-    /* Image Grid Styles */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns for larger screens */
-  gap: 20px;
-  margin-top: 20px;
-  position: relative;
-  left: 176px; /* Default offset for larger screens */
-}
-
-/* Image Styles */
-.image-grid img {
-  width: 100%;
-  height: 250px; /* Default height from inline style */
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-/* Hover Effect */
-.image-grid img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Text Styles */
-.image-grid p {
-  font-size: 1rem; /* Default font-size (16px) */
-  margin-top: 10px;
-  color: #333;
-}
-
-/* Media Queries for Mobile Devices */
-
-/* Extra small mobile devices (e.g., older iPhones, up to 320px width) */
-@media only screen and (max-width: 320px) {
-  .image-grid {
-    grid-template-columns: 1fr; /* Single column */
-    gap: 10px; /* Reduced gap */
-    left: 0; /* Remove offset to fit small screens */
-    margin-top: 10px;
-  }
-  .image-grid img {
-    height: 150px; /* Smaller height for compact screens */
-  }
-  .image-grid p {
-    font-size: 0.875rem; /* Smaller font (14px) */
-  }
-}
-
-/* Small mobile devices (e.g., iPhone SE, 321px to 360px) */
-@media only screen and (min-width: 321px) and (max-width: 360px) {
-  .image-grid {
-    grid-template-columns: 1fr; /* Single column */
-    gap: 12px;
-    left: 0; /* Remove offset */
-    margin-top: 15px;
-  }
-  .image-grid img {
-    height: 180px; /* Slightly larger height */
-  }
-  .image-grid p {
-    font-size: 0.9375rem; /* Font-size (15px) */
-  }
-}
-
-/* Medium mobile devices (e.g., iPhone XR, iPhone 11, 361px to 414px) */
-@media only screen and (min-width: 361px) and (max-width: 414px) {
-  .image-grid {
-    grid-template-columns: 1fr; /* Single column */
-    gap: 15px;
-    left: 0; /* Remove offset */
-    margin-top: 15px;
-  }
-  .image-grid img {
-    height: 336px; /* Balanced height for iPhone XR */
-  }
-  .image-grid p {
-    font-size: 1rem; /* Font-size (16px) */
-  }
-}
-
-/* Larger mobile devices (e.g., iPhone 12 Pro Max, Galaxy Note, 415px to 576px) */
-@media only screen and (min-width: 415px) and (max-width: 576px) {
-  .image-grid {
-    grid-template-columns: 1fr; /* Single column */
-    gap: 18px;
-    left: 0; /* Remove offset */
-    margin-top: 20px;
-  }
-  .image-grid img {
-    height: 220px; /* Slightly larger height */
-  }
-  .image-grid p {
-    font-size: 1.0625rem; /* Font-size (17px) */
-  }
-}
-
-/* Tablets and small laptops (577px to 768px) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    gap: 20px;
-    left: 50px; /* Reduced offset for tablets */
-    margin-top: 20px;
-  }
-  .image-grid img {
-    height: 230px; /* Slightly smaller than default */
-  }
-  .image-grid p {
-    font-size: 1.125rem; /* Font-size (18px) */
-  }
-}
-
-
-/* Power Plug Grid Styles */
-.power-plug-grid {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap for responsiveness */
-  gap: 1.5rem; /* Bootstrap gap-4 equivalent (1.5rem) */
-  position: relative;
-  left: 94px; /* Default offset for larger screens */
-  margin-top: 20px; /* Consistent with previous sections */
-}
-
-/* Image Styles */
-.power-plug-grid img {
-  width: 100%;
-  max-width: 250px; /* Limit image width for consistency */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* From inline style */
-  border-radius: 10px; /* Consistent with previous image-grid */
-  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Consistent with previous */
-}
-
-/* Hover Effect */
-.power-plug-grid img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Consistent with previous */
-}
-
-/* Text Styles */
-.power-plug-grid p {
-  font-size: 1rem; /* Default font-size (16px) */
-  margin-top: 10px;
-  color: #333;
-}
-/* Third Image with Extra Height */
-.power-plug-grid div:nth-child(3) img {
-  max-width: 385px; /* Same max-width as others */
-  height: 251px; /* Maintain aspect ratio */
-}
-
-/* Media Queries for Mobile Devices */
-
-/* Extra small mobile devices (e.g., older iPhones, up to 320px width) */
-@media only screen and (max-width: 320px) {
-  .power-plug-grid {
-    flex-direction: column; /* Stack vertically */
-    gap: 1rem; /* Smaller gap */
-    left: 0; /* Remove offset */
-    margin-top: 10px;
-    padding: 0 10px; /* Add minimal padding */
-  }
-  .power-plug-grid img {
-    max-width: 150px; /* Smaller images */
-    height: auto;
-  }
-  .power-plug-grid p {
-    font-size: 0.875rem; /* Smaller font (14px) */
-  }
-}
-
-/* Small mobile devices (e.g., iPhone SE, 321px to 360px) */
-@media only screen and (min-width: 321px) and (max-width: 360px) {
-  .power-plug-grid {
-    flex-direction: column; /* Stack vertically */
-    gap: 1rem;
-    left: 0;
-    margin-top: 15px;
-    padding: 0 15px;
-  }
-  .power-plug-grid img {
-    max-width: 180px; /* Slightly larger images */
-    height: auto;
-  }
-  .power-plug-grid p {
-    font-size: 0.9375rem; /* Font-size (15px) */
-  }
-}
-
-/* Medium mobile devices (e.g., iPhone XR, iPhone 11, 361px to 414px) */
-@media only screen and (min-width: 361px) and (max-width: 414px) {
-  .power-plug-grid {
-    flex-direction: column; /* Stack vertically */
-    gap: 1.25rem; /* Moderate gap */
-    left: 0;
-    margin-top: 15px;
-    padding: 0 15px;
-  }
-  .power-plug-grid img {
-    max-width: 200px; /* Balanced for iPhone XR */
-    height: auto;
-  }
-  .power-plug-grid p {
-    font-size: 1rem; /* Font-size (16px) */
-  }
-}
-
-/* Larger mobile devices (e.g., iPhone 12 Pro Max, Galaxy Note, 415px to 576px) */
-@media only screen and (min-width: 415px) and (max-width: 576px) {
-  .power-plug-grid {
-    flex-direction: column; /* Stack vertically */
-    gap: 1.25rem;
-    left: 0;
-    margin-top: 20px;
-    padding: 0 20px;
-  }
-  .power-plug-grid img {
-    max-width: 220px; /* Larger images */
-    height: auto;
-  }
-  .power-plug-grid p {
-    font-size: 1.0625rem; /* Font-size (17px) */
-  }
-}
-
-/* Tablets and small laptops (577px to 768px) */
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .power-plug-grid {
-    flex-direction: row; /* Horizontal layout for tablets */
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    left: 50px; /* Reduced offset */
-    margin-top: 20px;
-    padding: 0 20px;
-  }
-  .power-plug-grid img {
-    max-width: 230px; /* Slightly smaller than default */
-    height: auto;
-  }
-  .power-plug-grid p {
-    font-size: 1.125rem; /* Font-size (18px) */
-  }
-  .power-plug-grid > div {
-    flex: 1 1 calc(50% - 1.5rem); /* Two items per row */
-  }
-}
-
-
-
-/* High-density displays (e.g., Retina) */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-resolution: 192dpi) {
-  .power-plug-grid img {
-    object-fit: contain; /* Ensure crisp rendering */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-     .useful-info {
-      position: relative;
-      z-index: 1;
-    }
-
-    .useful-info::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
-      background-size: cover;
-      opacity: 0.1;
-      z-index: -1;
-    }
-
-    .useful-info .content-block {
-      padding: 30px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-      margin-bottom: 30px;
-    }
-
-    .useful-info .content-block h2 {
-      font-size: 1.5em;
-      color: black;
-      margin-bottom: 25px;
+<style>
+    .coming-soon {
+      /* background: linear-gradient(to right, #2c3e50, #4ca1af); */
+      /* color: white; */
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-    }
+      flex-direction: column;
+      padding: 20px;
+    
 
-    .useful-info .content-block h3 {
-      font-size: 1.5rem;
-      color: black;
-      margin-bottom: 15px;
-      text-align: center;
-    }
+  
+    
+}
 
-    .useful-info .content-block p {
-      font-size: 1rem;
-      line-height: 1.8;
-      color: #555555d0;
-      margin-bottom: 20px;
-    }
 
-    .useful-info .content-block ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
-
-    .useful-info .content-block ul li {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #555;
+    .coming-soon h1 {
+      font-size: 60px;
       margin-bottom: 10px;
+      animation: fadeInDown 1s ease-in-out;
     }
 
-    .useful-info .content-block a {
-      color: #2c6e49;
-      text-decoration: underline;
-      transition: color 0.3s ease;
+    .coming-soon p {
+      font-size: 20px;
+      opacity: 0.9;
+      animation: fadeInUp 1.5s ease-in-out;
     }
 
-    .useful-info .content-block a:hover {
-      color: #1a4b31;
-    }
-
-    .useful-info .image-block {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin: 0 auto;
-      max-width: 600px;
-      text-align: center;
-    }
-
-    .useful-info .image-block img {
-      width: 100%;
-      height: auto;
-      transition: transform 0.5s ease, box-shadow 0.5s ease;
-    }
-
-    .useful-info .image-block img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-
-   
-
-    @media (max-width: 767px) {
-      section {
-        padding: 60px 0;
-        margin-top: 51px;
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
       }
-
-      .page-title {
-        padding: 100px 0 40px;
-      }
-
-      .page-title .title h3 {
-        font-size: 2.5rem;
-      }
-
-      .useful-info .content-block h2 {
-        font-size: 1rem;
-      }
-
-      .useful-info .content-block h3 {
-        font-size: 1em;
-      }
-
-      /* .image-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .image-grid img {
-        height: auto;
-      }*/
-    } 
-
-    @media (max-width: 575px) {
-      .useful-info .content-block {
-        padding: 20px;
-      }
-
-      .page-title .title h3 {
-        font-size: 2rem;
-      }
-
-      .useful-info .image-block {
-        max-width: 100%;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
-  </style>
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section class="map-section" style=" padding: 0px; ">
   <div class="container-fluid">
@@ -815,7 +405,13 @@
                     <!-- <p><a href="mailto:exotic@abc.com"><i class="fa fa-envelope"></i> exotic@abc.com</a></p> -->
                   </div>
                 </li>
-                
+                <!-- <li>
+                  <strong><i class="fa fa-store"></i> Exhibitors Query:</strong>
+                  <div class="contact-info">
+                    <p><i class="fa fa-phone"></i> +91 00000000</p>
+                    <p><a href="mailto:abcd@abcd.com"><i class="fa fa-envelope"></i> abcd@abcd.com</a></p>
+                  </div>
+                </li> -->
                 <li>
                   <strong><i class="fa fa-bus"></i> Tours & Transport Query:</strong>
                   <div class="contact-info">
@@ -838,7 +434,7 @@
         <div class="col-md-6 align-self-center">
           <div class="copyright-text">
             <p>© 2025 APSOPRS 2026. All Rights Reserved</p>
-            
+           
           </div>
         </div>
         <div class="col-md-6">
@@ -860,7 +456,17 @@
           </div>
         </div>
       </div>
-      
+      <!-- <div class="row mt-3">
+        <div class="col-12">
+          <div class="policy-links text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="terms-conditions.html">Terms & Conditions</a></li>
+              <li class="list-inline-item"><a href="refund-policy.html">Refund Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
     </div>
   </footer>
   <style>
@@ -955,7 +561,7 @@
     }
     
     .social-links a:hover {
-      color: #db4fa1;
+      color:  #db4fa1;
       transform: translateY(-3px);
     }
     
@@ -1033,18 +639,19 @@
   <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/custom.js"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- Popper.js (required for Bootstrap tooltips and popovers) -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <!-- Popper.js (required for Bootstrap tooltips and popovers) -->
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 
+   <!-- Bootstrap JS -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-  <script>
+   <script>
     $(document).ready(function () {
       // Close navbar when clicking outside
       $(document).click(function (event) {
@@ -1062,8 +669,7 @@
         }
       });
     });
-  </script>
-  
+</script>
   
   </body>
   </html>

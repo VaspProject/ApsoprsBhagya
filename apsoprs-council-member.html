@@ -59,42 +59,7 @@
 }
     
 
-    .about .content-block {
-      padding: 30px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    .about .content-block h2 {
-      font-size: 1.5rem;
-      margin-bottom: 25px;
-      color: #333;
-    }
-
-    .about .content-block p {
-      font-size: 1rem;
-      line-height: 1.8;
-      /* color: #666; */
-      margin-bottom: 20px;
-    }
-
-    .about .image-block {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-
-    /* Responsive Fixes */
-    
-
-    @media (max-width: 575px) {
-      .about .content-block {
-        padding: 20px;
-      }
-
-     
-    }
+   
 
 .logo-container {
   display: flex;
@@ -188,7 +153,7 @@
               <a class="nav-link dropdown-toggle" href="#">Committee </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="apsoprs-council-member.html">APSOPRS Council Members</a>
-                <a class="dropdown-item" href="OPAI.html">OPAI Council Members</a>
+              <a class="dropdown-item" href="OPAI.html">OPAI Council Members</a>
               <a class="dropdown-item" href="apsoprs-india-grp.html">Conference Organizing Committee APSOPRS 2026</a>
               <a class="dropdown-item" href="loc.html">Local Advisory Committee </a>
                
@@ -248,7 +213,7 @@
 <!--================================
 =            Page Title            =
 =================================-->
-<section class="page-title bg-title" style="background: url('images/subbanners/About-Us.png'); background-size: cover; background-position: center; position: relative; padding: 26px; height: 420px; top: -6px;">
+<section class="page-title bg-title" style="background: url('images/subbanners/Apsoprs-Council-Members.png'); background-size: cover; background-position: center; position: relative; padding: 26px; height: 420px; top: -6px;">
   <div class="container h-100">
     <div class="row h-100 align-items-end justify-content-end text-end">
       <!-- <div class="col-12 col-md-6" style="position: relative; bottom: 46px;">
@@ -264,6 +229,23 @@
   </div>
 </section>
 <style>
+
+body {
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.1; /* adjust visibility */
+    z-index: -1;
+}
   @media (max-width: 768px) {
   .page-title {
     height: 350px !important;
@@ -386,79 +368,428 @@
 =            About            =
 ============================-->
 
-<section class="section about">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-6 align-self-center">
-				<div class="image-block bg-about" style="box-shadow: 0 10px 30px #560348;">
-					<img class="img-fluid" src="images/aciapacific.png" alt="">
-				</div>
-			</div>
-			<div class="col-lg-8 col-md-6 align-self-center">
-				<div class="content-block">
-					<h2>About The <span class="alternate">Apsoprs</span></h2>
-          
-					<div class="description-one">
-						<p>
-							The Asia Pacific Society of Ophthalmic Plastic and Reconstructive Surgery (APSOPRS) has been working since 2000 as a major subspecialty 
-              of Ophthalmology. We have a tight connection with the supranational organizations like International Council of Ophthalmology and Asia 
-              Pacific Academy of Ophthalmology. We, therefore, have a responsibility for all the patients in our region to improve their eye function 
-              with updated knowledge and modified skill. 
-              <br>
-              Although the Asia-Pacific region has more than half the population of the world, many of these have received little chance to take a 
-              proper treatment of oculoplasty because of small number of oculoplastic specialists. In order to improve these adverse circumstances, 
-              the most important factor is to provide high quality education. Our vital effort is to provide the best possible training through quality
-              fellowship programs. The impetus for this can be provided by holding CME activities, workshops and conferences. They should be held in
-              different parts of this vast region to spread the base and to develop interest in the specialty in all parts.
-              <br>
-              The society must become truly representative of the entire region. This can only be done by enlarging our membership base, developing 
-              national oculoplastic societies, affiliating them to the APSOPRS and tuning them all to our objectives. At the moment, only 8 national 
-              societies are affiliated: Australia/New Zealand, China, Indonesia, Japan, South Korea, India, Philippines and Thailand. As there are much 
-              more countries in the Asia-Pacific region, we need more endeavor to establish more national societies in our region.
-              <br>
-              We need to promote development of centres of excellence in the specialty, providing the best possible oculoplastic care. We also need to 
-              ensure that the culture of research, especially in the problems that are commoner in or are peculiar to the region, is promoted to answer 
-              the questions that befuddle us. Oculoplastic surgery is developing at a very rapid pace. Newer techniques and technologies are coming up and
-              newer vistas are opening up in a short period. The development of highest level of academic standards will also require us to coordinate 
-              with other organizations in the field of oculoplastics. American society of OPRS has been our reciprocal society, but we need to have more
-              reciprocal societies to catch up with and lead the rapid development of technique and knowledge of the oculoplastics. Turkish Society of 
-              OPRS and Korean College of Cosmetic Surgery are newly affiliated with our society.
-              <br>
-              Although the Asia Pacific Society of Ophthalmic Plastic and Reconstructive Surgery is still developing, we do continuous efforts to 
-              provide the highest level oculoplastic treatment to all persons for their healthy lives.
-						</p>
-					</div>
-					
-				</div>
-
-
-
-        
-			</div>
-
-      <div class="content-block mt-4">
-        <h2>Sri Sankaradeva Nethralaya: <span class="alternate">A Beacon of Hope in Ophthalmic Care</span></h2>
-        <div class="text-center mb-4">
-          <img src="images/logo2.png" alt="Sri Sankaradeva Nethralaya Logo" style="max-width: 200px; height: auto;">
+<section class="section speakers bg-speaker" style="background: none; padding: 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title black">
+            <h3>Apsoprs Council <span class="alternate"> Members</span> </h3>
+          </div>
         </div>
-        <p>
-          Sri SankaradevaNethralaya (SSDN), Guwahatiis the only tertiary eye care center in Northeast India and a nationally recognized Centre of Excellence, offering a comprehensive spectrum of eye health services under one roof. More than a hospital, it is a sanctuary of vision, compassion, and innovation—a place where science and service converge.
-          <br>
-          Founded in 1994 under the visionary guidance of Dr. Harsha Bhattacharjee and Sri Kanchi Sankara Health & Educational Foundation Trust, SSDN was born of a noble mission: to bring specialized eye care to the underserved populations of Northeast India. What began as a modest endeavor has flourished into a premier ophthalmic institution, known not only for its exceptional clinical care but also for its pioneering academic and research contributions.
-          <br>
-          Over the decades, SSDN has emerged as a radiant pillar of excellence, delivering world-class ophthalmic services integrated with advanced diagnostics, refined surgical techniques, and an expansive community outreach network. Its commitment extends beyond treatment—to training future ophthalmologists, advancing translational research, and eradicating avoidable blindness across the region.
-          <br>
-          At the heart of this institution lies the Ophthalmic Plastic, Reconstructive Surgery, and Oculo-Facial Aesthetics Department—an Unit where artistic vision is seamlessly blended with surgical mastery.Whether performing micro-aesthetic procedures, orbital implant reconstructions, navigation-guided decompressions, or cutting-edge regenerative therapies, this unit exemplifies the union of form and function, beauty and healing.
-          <br>
-          Through the grace of divine purpose, relentless dedication, and community-rooted values, SSDN has touched over 2,114 villages in Assam, restoring sight and transforming lives. Its contributions have been celebrated by global bodies including the United Nations, World Health Organization Govt of India and Govt of Assam, affirming its role as a leader in equitable eye health delivery.
-          <br>
-          As a non-profit, community-committed institute, Sri SankaradevaNethralaya remains deeply devoted to accessible, affordable, and ethical care—ensuring that no one is left behind in the pursuit of vision. Within this legacy, its Ophthalmic Plastic, Reconstructive Surgery, and Oculo-Facial Aesthetics division continues to shine—restoring dignity, redefining beauty, and healing with both skill and soul.
-         
-        </p>
       </div>
-		</div>
-	</div>
-</section>
+      <div class="row" data-aos="zoom-in" data-aos-hover="flip-left">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/icon/Kasturi-color-bg.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Kasturi Bhattacharjee</a></h5>
+              <p>President APSOPRS</p>
+              <p >India</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr. Kam Lung Kelvin Chong.png" alt="officer" class="img-fluid speaker-img">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Kam lungLung Kelvin Chong</a></h5>
+              <p>President Elect</p>
+              <p>Hongkong</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Kyung In Woo.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. kyungKyung In Woo</a></h5>
+              <p>Immediate Past President</p>
+              <p>Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Stephanie Ming Young.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Stephanie Young</a></h5>
+              <p>First Vice President</p>
+              <p>Singapore</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Helen Lew.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Helen Lew</a></h5>
+              <p>Second Vice President</p>
+              <p>Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr. Milind Naik.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Milind Naik</a></h5>
+              <p>Third Vice President</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr. Yvette Marie Santiago.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Yvette Marie Santiago</a></h5>
+              <p>Secretary</p>
+              <p>Philippines</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Blanche Lim.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Blanche Lim</a></h5>
+              <p>Treasurer</p>
+              <p>Singapore</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Ho-Seok Sa.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Hoseok Sa</a></h5>
+              <p>Iplastics Editor</p>
+              <p>Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Purnima R Sthapit.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Purnima Rajkarnikar Sthapit</a></h5>
+              <p>Director</p>
+              <p>Nepal</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Wonkyung Viviana Cho.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Wonkyung Viviana Cho</a></h5>
+              <p>Director</p>
+              <p>Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Min Joung Lee.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Min Joung Lee</a></h5>
+              <p>Director</p>
+              <p>Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr George Pak Man Cheng.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. George Pak Man Cheng</a></h5>
+              <p>Director</p>
+              <p>Hongkong</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Raghuraj Hegde.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Raghuraj Hegde</a></h5>
+              <p>Director</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr. Alice Goh.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Alice Goh</a></h5>
+              <p>Director</p>
+              <p>Malaysia</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Honeylen Maryl Tiu Teo.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Honeylen Maryl Teo</a></h5>
+              <p>Director</p>
+              <p>Philippines</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Pimkwan Jaru-ampornpan.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Pimkwan Jaru Ampornpan</a></h5>
+              <p>Director</p>
+              <p>Thailand</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Akshay Gopinathan Nair.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Akshay Gopinathan Nair</a></h5>
+              <p>Director</p>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr THI THU HIEN NGUYEN.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Thi Thu Hien Ngyuyen</a></h5>
+              <p>Director</p>
+              <p>Vietnam</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
+              <img src="images/Council_Members/Dr Felice Katrina T Ranche.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Felice Katrina Ranche</a></h5>
+              <p>Director</p>
+              <p>Philippines</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .speaker-item {
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .speaker-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .speaker-item .image {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background: #fff; */
+      /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+      transition: box-shadow 0.3s ease;
+    }
+
+    .speaker-item .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .speaker-item:hover .image {
+      box-shadow: 0 6px 1px purple;      /* Round box shadow on hovering*/
+    }
+
+    .speaker-item .content {
+      padding: 15px 0;
+    }
+
+    .speaker-item .content h5 {
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .speaker-item .content h5 a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .speaker-item .content h5 a:hover {
+      color: #df7117;
+    }
+
+    .speaker-item .content p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    /* Media Queries for Responsive Design */
+
+    /* Extra Small Screens (320px and below) */
+    @media screen and (max-width: 320px) {
+      .speaker-item .image {
+        width: 120px;
+        height: 120px;
+      }
+
+      .speaker-item .content h5 {
+        font-size: 0.95rem;
+      }
+
+      .speaker-item .content p {
+        font-size: 0.8rem;
+      }
+
+      .speaker-item {
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Small Screens (321px to 576px) */
+    @media screen and (min-width: 321px) and (max-width: 576px) {
+      .speaker-item .image {
+        width: 140px;
+        height: 140px;
+      }
+
+      .speaker-item .content h5 {
+        font-size: 1rem;
+      }
+
+      .speaker-item .content p {
+        font-size: 0.85rem;
+      }
+
+      .speaker-item {
+        margin-bottom: 25px;
+      }
+    }
+
+    /* Medium Screens (577px to 768px) */
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+      .speaker-item .image {
+        width: 160px;
+        height: 160px;
+      }
+
+      .speaker-item .content h5 {
+        font-size: 1.05rem;
+      }
+
+      .speaker-item .content p {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Large Screens (769px to 992px) */
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      .speaker-item .image {
+        width: 170px;
+        height: 170px;
+      }
+
+      .speaker-item .content h5 {
+        font-size: 1.1rem;
+      }
+
+      .speaker-item .content p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Extra Large Screens (993px to 1200px) */
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+      .speaker-item .image {
+        width: 175px;
+        height: 175px;
+      }
+
+      .speaker-item .content h5 {
+        font-size: 1.15rem;
+      }
+
+      .speaker-item .content p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Extra Extra Large Screens (1201px and above) */
+    @media screen and (min-width: 1201px) {
+      .speaker-item .image {
+        width: 180px;
+        height: 180px;
+      }
+
+      .speaker-item .content h5 {
+        font-size: 1.2rem;
+      }
+
+      .speaker-item .content p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 
 <!--====  End of About  ====-->
 
@@ -796,6 +1127,13 @@
       });
     });
 </script>
+<script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
   
   </body>
   </html>
