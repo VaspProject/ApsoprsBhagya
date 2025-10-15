@@ -55,6 +55,30 @@
     
     }
 
+
+
+
+
+    /* Keep your existing CSS — just add below */
+.logo-before-right img {
+  max-height: 88px; /* match your other logos */
+  width: 100%;
+}
+
+/* Optional: tighten spacing between right-side logos */
+.logo-before-right,
+.logo-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* adjust spacing between them */
+}
+
+/* You can group right-side logos if needed */
+.logo-right-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
     
 
     .logo-container {
@@ -125,8 +149,11 @@
         <div class="logo-center">
           <img src="images/icon/centerlogo.png" alt="Center Logo">
         </div>
+        <div class="logo-before-right">
+          <img src="images/icon/Opai-Logo.png" alt="New Logo">
+        </div>
         <div class="logo-right">
-          <img src="images/icon/Opai-Logo.png" alt="Right Logo">
+          <img src="images/icon/sankarlogo.png" alt="Right Logo">
         </div>
       </div>
     </div>
@@ -153,7 +180,7 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="apsoprs-council-member.html">APSOPRS Council Members</a>
               <a class="dropdown-item" href="OPAI.html">OPAI Council Members</a>
-              <a class="dropdown-item" href="apsoprs-india-grp.html">Conference Organizing Committee APSOPRS 2026</a>
+              <a class="dropdown-item" href="apsoprs-india-grp.html">APSOPRS 2026 India Organizing Committee</a>
               <a class="dropdown-item" href="loc.html">Local Advisory Committee </a>
             </div>
           </li>
@@ -220,7 +247,7 @@
 =            Page Title            =
 =================================-->
 
-<section class="page-title bg-title" style="background: url('images/subbanners/Conference-Organizing-C.png'); 
+<section class="page-title bg-title" style="background: url('images/subbanners/apsoprs-india-group.png'); 
                                             background-size: cover; 
                                             background-position: center; 
                                             position: relative; 
@@ -252,7 +279,7 @@
   .page-title {
     height: 150px !important;
     padding: 16px;
-    top: 281px !important;
+    top: 387px !important;
   }
 
   .page-title h3 {
@@ -291,47 +318,85 @@
 
 <section class="committee-section">
   <h1 style="text-transform: none; letter-spacing: normal;">
-    Conference Organizing Committee 
-    <span class="alternate">APSOPRS 2026</span>
+    Apsoprs 2026 India Organizing 
+    <span class="alternate">Committee</span>
   </h1>
-  <div class="row justify-content-center g-5" style="font-family: Montserrat, sans-serif;">
-    
-    <!-- Lead Member -->
-    <div class="col-md-3 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="100">
-      <div class="card custom-card text-center">
-        <img src="images/Apsoprs-India-group/Dr Ashok Kumar Grover.png" alt="Lead Member" class="card-img-top mx-auto img-fluid" style="height: 245px; object-fit: cover;">
-        <div class="card-body p-2" style="padding: 1.5px !important;">
-          <p>Dr. Ashok Kumar Grover</p>
-          <p style="background: #8e1179; color: white;">Advisor</p>
+  <div class="container" style="font-family: Montserrat, sans-serif;">
+
+    <!-- Row 1: Two Members -->
+    <div class="row justify-content-center g-4">
+      <!-- Member 1 -->
+      <div class="col-md-4 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="100">
+        <div class="card custom-card text-center">
+          <img src="images/Apsoprs-India-group/Dr Ashok Kumar Grover.png" alt="Lead Member" class="card-img-top mx-auto img-fluid">
+          <div class="card-body p-2">
+            <p>Dr. Ashok Kumar Grover</p>
+            <p>President</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="col-md-4 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="200">
+        <div class="card custom-card text-center">
+          <img src="images/Apsoprs-India-group/9.png" alt="Lead Member" class="card-img-top mx-auto img-fluid">
+          <div class="card-body p-2">
+            <p>Dr. Santosh G Honavar</p>
+            <p>Vice President</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Other Member 1 -->
-    <div class="col-md-3 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="200">
-      <div class="card custom-card text-center">
-        <img src="images/icon/Kasturi-color-bg.png" alt="Member 1" class="card-img-top mx-auto img-fluid" style="height: 245px; object-fit: cover;">
-        <div class="card-body p-2" style="padding: 1.5px !important;">
-          <p style="font-size: 16px; font-weight: 400;">Dr. Kasturi Bhattacharjee</p>
-          <p style="background: #8e1179; color: white;">President</p>
+    <!-- Row 2: One Bigger Member -->
+    <div class="row justify-content-center g-4 mt-3">
+      <div class="col-md-5 col-sm-8 col-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="card custom-card big-card text-center">
+          <img src="images/icon/Kasturi-color-bg.png" alt="Member 2" class="card-img-top mx-auto img-fluid">
+          <div class="card-body p-2">
+            <p>Dr. Kasturi Bhattacharjee</p>
+            <p>Organizing Secretary</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Other Member 2 -->
-    <div class="col-md-3 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="300">
-      <div class="card custom-card text-center">
-        <img src="images/Apsoprs-India-group/Dr. Milind Naik.png" alt="Member 2" class="card-img-top mx-auto img-fluid" style="height: 245px; object-fit: cover;">
-        <div class="card-body p-2" style="padding: 1.5px !important;">
-          <p style="font-size: 16px; font-weight: 400;">Dr. Milind Naik</p>
-          <p style="background: #8e1179; color: white;">Vice President</p>
+    <!-- Row 3: Two Members -->
+    <div class="row justify-content-center g-4 mt-3">
+      <!-- Member 4 -->
+      <div class="col-md-4 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="400">
+        <div class="card custom-card text-center">
+          <img src="images/Apsoprs-India-group/Dr. Milind Naik.png" alt="Member 4" class="card-img-top mx-auto img-fluid">
+          <div class="card-body p-2">
+            <p>Dr. Milind Naik</p>
+            <p>Joint Secretary</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 5 -->
+      <div class="col-md-4 col-sm-6 col-12" data-aos="fade-up" data-aos-delay="500">
+        <div class="card custom-card text-center">
+          <img src="images/Apsoprs-India-group/Dr Jayanta Kumar Das.png" alt="Member 5" class="card-img-top mx-auto img-fluid">
+          <div class="card-body p-2">
+            <p>Dr. Jayanta Kumar Das</p>
+            <p>Treasurer</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 <style>
+  /* Make middle (second row) card a bit bigger */
+.big-card {
+    width: 20rem !important;
+    height: 25rem !important;
+}
+
+.big-card img {
+    height: 297px !important;
+}
 /* Base styles */
 .custom-card {
     width: 17rem;
@@ -451,7 +516,7 @@
     }
 
     .custom-card img {
-        height: 180px;
+        height: 275px;
     }
 
     .card-body p {
@@ -489,6 +554,12 @@
       }
       
   }
+  @media (max-width: 480px) {
+  .committee-section {
+    padding: 60px 15px;
+    margin-top: 243px;
+  }
+}
 </style>
 
 <section class="section speakers bg-speaker" style="background: #ffffff00; padding: 0px;">
@@ -538,15 +609,53 @@
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Akshay Gopinathan Nair.png" alt="officer" class="img-fluid">
+            <img src="images/Apsoprs-India-group/Dr Usha R. Kim.png" alt="officer" class="img-fluid">
           </div>
           <div class="content text-center">
-            <h5><a href="#">Dr. Akshay Gopinathan Nair</a></h5>
-            <!-- <p>Immediate Past President    3</p>
+            <h5><a href="#"> Dr. Usha R. Kim </a></h5>
+            <!-- <p>Director</p>
+            <p>Hongkong</p>    13-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Female Icon.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#">Dr Usha Singh</a></h5>
+            <!-- <p>Director</p>
+            <p>Hongkong</p>    13-->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Dr Shubhra Goel.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#">Dr. Shubhra Goel </a></h5>
+            <!-- <p>Third Vice President    6</p>
             <p>Korea</p> -->
           </div>
         </div>
       </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Dr Sunil Moreker.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#">Dr. Sunil Moreker       </a></h5>
+            <!-- <p>Treasurer    8</p>
+            <p>Singapore</p> -->
+          </div>
+        </div>
+      </div>
+     
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
@@ -555,6 +664,30 @@
           <div class="content text-center">
             <h5><a href="#">Dr. Debraj Debabrata Shome</a></h5>
             <!-- <p>First Vice President 4</p>
+            <p>Korea</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Dr Apjit Kaur Chhabra.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#"> Dr. Apjit Kaur Chhabra </a></h5>
+            <!-- <p>Director</p>
+            <p>India</p>  14 -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Dr Akshay Gopinathan Nair.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#">Dr. Akshay Gopinathan Nair</a></h5>
+            <!-- <p>Immediate Past President    3</p>
             <p>Korea</p> -->
           </div>
         </div>
@@ -571,18 +704,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Shubhra Goel.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#">Dr. Shubhra Goel </a></h5>
-            <!-- <p>Third Vice President    6</p>
-            <p>Korea</p> -->
-          </div>
-        </div>
-      </div>
+      
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
@@ -595,18 +717,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Sunil Moreker.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#">Dr. Sunil Moreker       </a></h5>
-            <!-- <p>Treasurer    8</p>
-            <p>Singapore</p> -->
-          </div>
-        </div>
-      </div>
+      
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
@@ -616,6 +727,30 @@
             <h5><a href="#">Dr. Prerana Tahiliani   </a></h5>
             <!-- <p>Treasurer    8</p>
             <p>Singapore</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Dr Swati Singh.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#"> Dr. Swati Singh</a></h5>
+            <!-- <p>Director</p>
+            <p>Thailand</p>    17 -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="speaker-item">
+          <div class="image">
+            <img src="images/Apsoprs-India-group/Dr Tarjani Dave.png" alt="officer" class="img-fluid">
+          </div>
+          <div class="content text-center">
+            <h5><a href="#"> Dr. Tarjani Vivek Dave </a></h5>
+            <!-- <p>Director</p>
+            <p>Philippines</p>   16-->
           </div>
         </div>
       </div>
@@ -649,12 +784,14 @@
             <img src="images/Apsoprs-India-group/Female Icon.png" alt="officer" class="img-fluid">
           </div>
           <div class="content text-center">
-            <h5><a href="#">Dr. Shruthi Tara Vasudev</a></h5>
+            <h5><a href="#"> Dr. Priti Udhay  </a></h5>
             <!-- <p>Director</p>
-            <p>Korea</p>   11-->
+            <p>Vietnam</p> 19 -->
           </div>
         </div>
       </div>
+
+     
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
@@ -667,66 +804,22 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Usha R. Kim.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#"> Dr. Usha R. Kim </a></h5>
-            <!-- <p>Director</p>
-            <p>Hongkong</p>    13-->
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Apjit Kaur Chhabra.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#"> Dr. Apjit Kaur Chhabra </a></h5>
-            <!-- <p>Director</p>
-            <p>India</p>  14 -->
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
+      
+      
+      <!-- <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
             <img src="images/Apsoprs-India-group/Dr Jayanta Kumar Das.png" alt="officer" class="img-fluid">
           </div>
           <div class="content text-center">
             <h5><a href="#"> Dr. Jayanta Kumar Das </a></h5>
-            <!-- <p>Director</p>
-            <p>Malaysia</p>  15-->
+            <p>Director</p>
+            <p>Malaysia</p>  15
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Tarjani Dave.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#"> Dr. Tarjani Dave </a></h5>
-            <!-- <p>Director</p>
-            <p>Philippines</p>   16-->
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Dr Swati Singh.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#"> Dr. Swati Singh</a></h5>
-            <!-- <p>Director</p>
-            <p>Thailand</p>    17 -->
-          </div>
-        </div>
-      </div>
+      </div> -->
+      
+      
       <div class="col-lg-3 col-md-4 col-sm-6">
         <div class="speaker-item">
           <div class="image">
@@ -739,19 +832,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="speaker-item">
-          <div class="image">
-            <img src="images/Apsoprs-India-group/Female Icon.png" alt="officer" class="img-fluid">
-          </div>
-          <div class="content text-center">
-            <h5><a href="#"> Dr. Priti Udhay  </a></h5>
-            <!-- <p>Director</p>
-            <p>Vietnam</p> 19 -->
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
+      
+      <!-- <div class="row justify-content-center"> -->
         <!-- First 3 images -->
         <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="speaker-item">
@@ -766,6 +848,18 @@
         <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="speaker-item">
             <div class="image">
+              <img src="images/Apsoprs-India-group/Female Icon.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#">Dr. Shruthi Tara Vasudev</a></h5>
+              <!-- <p>Director</p>
+              <p>Korea</p>   11-->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image">
               <img src="images/Apsoprs-India-group/Dr Nidhi Pandey.png" alt="officer" class="img-fluid">
             </div>
             <div class="content text-center">
@@ -773,7 +867,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-sm-6">
+        <!-- <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="speaker-item">
             <div class="image">
               <img src="images/Apsoprs-India-group/Male Icon.png" alt="officer" class="img-fluid">
@@ -782,22 +876,11 @@
               <h5><a href="#"> Dr. Rituraj Baruah  </a></h5>
             </div>
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
       
-      <div class="row justify-content-center mt-4 ">
+      <!-- <div class="row justify-content-center mt-4 "> -->
         <!-- Last 2 images -->
-        <div class="col-lg-3 col-md-4 col-sm-6">
-          <div class="speaker-item">
-            <div class="image" style="margin-bottom:0px;
-    margin-top: -9px;">
-              <img src="images/Apsoprs-India-group/Dr Varshitha Hemanth Vasanthapuram.png" alt="officer" class="img-fluid">
-            </div>
-            <div class="content text-center">
-              <h5><a href="#"> Dr. Varshitha Hemanth Vasanthapuram </a></h5>
-            </div>
-          </div>
-        </div>
         <div class="col-lg-3 col-md-4 col-sm-6">
           <div class="speaker-item">
             <div class="image">
@@ -808,7 +891,18 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="speaker-item">
+            <div class="image" style="margin-bottom:0px; margin-top: -9px;">
+              <img src="images/Apsoprs-India-group/Dr Varshitha Hemanth Vasanthapuram.png" alt="officer" class="img-fluid">
+            </div>
+            <div class="content text-center">
+              <h5><a href="#"> Dr. Varshitha Hemanth Vasanthapuram </a></h5>
+            </div>
+          </div>
+        </div>
+        
+      <!-- </div> -->
       
       
       

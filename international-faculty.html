@@ -31,8 +31,24 @@
   <link href="images/Capture.PNG" rel="shortcut icon">
 
   <style>
+    body {
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.1; /* adjust visibility */
+    z-index: -1;
+}
     
- .logo-container {
+    .logo-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +84,8 @@
           float: none;
         }
       }
+
+
       /* Keep your existing CSS — just add below */
 .logo-before-right img {
   max-height: 88px; /* match your other logos */
@@ -198,23 +216,27 @@
   </nav>
 </header>
 
+
+
 <!--====  End of Navigation Section  ====-->
+
+
 
 <!--================================
 =            Page Title            =
 =================================-->
 
-<section class="page-title bg-title" style="background: url('images/subbanners/Workshop.png'); background-size: cover; background-position: center; position: relative; padding: 26px; height: 420px;  top: -6px;">
+<section class="page-title bg-title" style="background: url('images/subbanners/international-faculty.png'); background-size: cover; background-position: center; position: relative; padding: 26px; height: 420px; top: -6px;">
   <div class="container h-100">
     <div class="row h-100 align-items-end justify-content-end text-end">
       <!-- <div class="col-12 col-md-6" style="position: relative;
-    bottom: 43px;">
+    bottom: 44px;">
         <div class="title">
-          <h3 style="font-size: 1rem; margin-bottom: 0px;">Workshop Registration</h3>
+          <h3 style="font-size: 1rem; margin-bottom: 0px;">Offline Form</h3>
         </div>
         <ol class="breadcrumb p-0 m-0 justify-content-center">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Workshop Registration</li>
+          <li class="breadcrumb-item active">Offline Form</li>
         </ol>
       </div> -->
     </div>
@@ -232,7 +254,6 @@
     height: 150px !important;
     padding: 16px;
     top: 260px !important;
-    
   }
 
   .page-title h3 {
@@ -245,301 +266,271 @@
 <!--====  End of Page Title  ====-->
 
 
-<section class="workshop-notice">
-    <!-- <div class="container">
-      <div class="marquee">
-        <p>Registration is mandatory for participating in workshop</p> 
-      </div>
-    </div> -->
 
 
 
+<!-- <section class="coming-soon">
+    <h1>Coming Soon</h1> -->
+    <!-- <p>We're working hard to launch our new website.<br>Please stay tuned!</p> -->
+  <!-- </section> -->
 
-
-    <!-- form -->
-
-
+  <section class="faculty-section">
     <div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-title">
-					<h3>Workshop<span class="alternate"> Registration</span></h3>
-          <p>Hands-on workshops to be led by both Nationally and Internationally Renowned GLOBAL Experts in Ophthalmic Plastic and Reconstructive Surgery and Facial Aesthetics.</p>
-				</div>
-			</div>
-		</div>
-		
-    <div class="container">
-      <ul class="list-group">
-        <p style="margin-top: -25px;
-        padding-left: 14px;
-        color: black;
-        font-size: 1.1rem;">Workshop Guideline :</p>
-          <li class="list-group-item" style="color: black;">1. Conference Registration mandatory with registration number to register for the hands on workshop.</li>
-          <li class="list-group-item" style="color: black;">2. Delegates may register for up to two workshops: one selection from Group 1 (A or B) and one from Group 2 (A or B).</li>
-          <li class="list-group-item" style="color: black;">3. Tea time treasure - "Pearls from Masters" sessions is complementary for only 100 slots.</li>
-          <li class="list-group-item" style="color: black;">4. This is open to only registered delegates - Only 100 slots available per workshop, allocated on a first-come, first-served basis.</li>
-      </ul>
-    </div>
-     
-
-    <div class="container mt-4">
-      <div class="workshop-header">
-          <h2 style="color: white;
-    font-size: 1.2rem;">Workshop Registration - 50 USD / 3000 INR - One Delegates can Register for only two Workshops maximum and additional Pearls from Masters</h2>
-      </div>
-      <div class="row workshop-row">
-          <div class="col-12 col-md-6">
-              <div class="workshop-item">
-                  <div class="workshop-number">
-                      <span class="workshop-title">Workshop</span>
-                      <div class="number-part">1</div>
-                      <div class="letter-part">A</div>
-                  </div>
-                  <!-- <span class="live-tag">LIVE</span> -->
-                  <h4>OCULOFACIAL AESTHETICS </h4>
-                  <p><i class="fa-solid fa-calendar-days"></i> 19th November 2026 : 9:00 AM-10:30 AM</p>
-              </div>
+      <h2 class="section-title">APSOPRS 2026 International <span class="alternate"> Faculty</h2></span>
+  
+      <div class="faculty-grid">
+        <!-- Member 1 -->
+        <div class="faculty-card">
+          <div class="faculty-image">
+            <img src="images/maps/international-faculty-pics/Prof. Dr. Mark J Lucarelli.png" alt="Dr. Rolika Bansal">
           </div>
-          <div class="col-12 col-md-6">
-              <div class="workshop-item">
-                  <div class="workshop-number">
-                      <span class="workshop-title">Workshop</span>
-                      <div class="number-part">1</div>
-                      <div class="letter-part">B</div>
-                  </div>
-                  <!-- <span class="live-tag">LIVE</span> -->
-                  <h4>ENDOSCOPIC DCR SURGERY</h4>
-                  <p><i class="fa-solid fa-calendar-days"></i> 19th November 2026 : 9:00 AM-10:30 AM</p>
-              </div>
+          <h4 class="faculty-name">Prof. Dr. Mark J Lucarelli</h4>
+          <p>USA</p>
+        </div>
+  
+        <!-- Member 2 -->
+        <div class="faculty-card">
+          <div class="faculty-image">
+            <img src="images/maps/international-faculty-pics/Dr. Don Kikkawa.png" alt="Dr. Ayushi Agarwal">
           </div>
-          <div class="col-12 col-md-6">
-              <div class="workshop-item">
-                  <div class="workshop-number">
-                      <span class="workshop-title">Workshop</span>
-                      <div class="number-part">2</div>
-                      <div class="letter-part">A</div>
-                  </div>
-                  <!-- <span class="live-tag">LIVE</span> -->
-                  <h4>THYROID DECOMPRESSION</h4>
-                  <p><i class="fa-solid fa-calendar-days"></i> 19th November 2026 : 11:00 AM-12:30 AM</p>
-              </div>
-          </div>
-          <div class="col-12 col-md-6">
-              <div class="workshop-item">
-                  <div class="workshop-number">
-                      <span class="workshop-title">Workshop</span>
-                      <div class="number-part">2</div>
-                      <div class="letter-part">B</div>
-                  </div>
-                  <!-- <span class="live-tag">LIVE</span> -->
-                  <h4>ORBITAL FRACTURE REPAIR <br> AND RECONSTRUCTION</h4>
-                  <p><i class="fa-solid fa-calendar-days"></i> 19th November 2026 : 11:00 AM-12:30 AM</p>
-              </div>
-          </div>
-          <div class="col-12">
-              <div class="workshop-item complimentary">
-                  <!-- <div class="workshop-number">
-                      <span class="workshop-title">Workshop</span>
-                      <div class="number-part">3</div>
-                  </div> -->
-                  <h4 style="margin-top:20px;">Tea-Time Treasures: <br> Pearls from the Masters</h4>
-                  <p><i class="fa-solid fa-calendar-days"></i> 19th November 2026 : 5:00 PM-7:00 PM </p> 
-                  <p>Complimentary for all the Registered Delegates only first 100 slots</p>
-              </div>
-          </div>
-      </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-		        <div class="row">
-              <div class="col-12 text-center">
-                <a href="https://delegate.numerotech.com/119/apsoprs26" target="_blank">
-                    <button type="button" class="btn btn-main-md" style="margin-top: 25px;">
-                        Click here to register for workshop
-                    </button>
-                </a>
+          <h4 class="faculty-name">Prof. Dr. Don Kikkawa</h4>
+          <p> USA</p>
+        </div>
+  
+        <!-- Member 3 -->
+        <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Francesco Quaranta Leoni.png" alt="Dr. Ayushi Agarwal">
             </div>
-            <div class="mt-4" style="margin-left: 11px; margin-right: 7px;">
-              <p><b>For any query contact: </b><a href="mailto:apsoprshelpdesk@gmail.com" style="color:#8e1179;"> <i class="fa-regular fa-envelope"></i> apsoprshelpdesk@gmail.com</a> OR Call us: <a href="tel:+91 422 4374920 // +91 422 4372920 " style="color:#8e1179;">+91 422 4374920 || +91 422 4372920.</a></p>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+            <h4 class="faculty-name">Prof. Dr. Francesco M. Quaranta-Leoni</h4>
+            <p> UK</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Robert Goldberg.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Robert Goldberg</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Andrew Lee.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr Andrew Lee</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Lelio Baldeschi.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Lelio Baldeschi</h4>
+            <p>Europe</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Wendy W lee.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Wendy W. Lee</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Bobby S Korn.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Bobby S. Korn</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Femida Kherani.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Femida Kherani</h4>
+            <p> Columbia</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Guy Ben Simon.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Dr Guy Ben Simon</h4>
+            <p> Israel</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Daphna Landau.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Daphna Landau</h4>
+            <p>  Israel</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Jocelyn Kohn .png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Jocelyn Kohn</h4>
+            <p>  Chile</p>
+          </div>
+      </div>
+    </div>
   </section>
 
-<style>
- .workshop-header {
-            background-color: #8e1179;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        .workshop-item {
-            background-color: #a06997;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .workshop-number {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 15px;
-            margin-bottom: 10px;
-        }
-        .workshop-title {
-            font-size: 1rem;
-            color: white;
-            margin-bottom: 5px;
-        }
-        .number-part, .letter-part {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border: 2px solid #053781;
-            border-radius: 5px;
-            margin: 2px 0;
-        }
-        .number-part {
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-        .letter-part {
-            font-size: 1rem;
-            font-weight: bold;
-        }
-        .workshop-item.complimentary {
-            background-color: #a06997;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            max-width: 500px;
-            height: 187px;
-        }
-        .live-tag {
-            color: #d4a017;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        /* @media (max-width: 768px) {
-            .workshop-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            .workshop-number {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-            .live-tag {
-                margin-right: 0;
-                margin-bottom: 5px;
-            }
-            h4, p {
-                margin: 0;
-            }
-        } */
+  <style>
 
+    /* Section styling */
+.faculty-section {
+  padding: 80px 20px;
+  
+  text-align: center;
+}
 
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+}
 
-.workshop-notice {
-    position: relative;
-    /* z-index: 1; */
-    padding: 20px 0;
-    /* background: #fff; */
-    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #a032a0;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid layout */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card styling */
+.faculty-card {
+  background: #eae9ec;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 0px 20px 0px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 309px;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Image styling */
+.faculty-image {
+  /* background: linear-gradient(135deg, #a032a0, #e47ad1); */
+  border-radius: 50%;
+  padding: 5px;
+  width: 271px;
+  height: 259px;
+  /* margin: 0 auto 15px; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faculty-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.faculty-card:hover .faculty-image img {
+  transform: scale(1.1);
+}
+
+/* Name styling */
+.faculty-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 22px;
+  margin-bottom: 0px;
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+.faculty-card:hover .faculty-name {
+  transform: scale(0.9);
+  color: #a032a0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .faculty-section {
+    padding: 60px 15px;
   }
 
-  .workshop-notice::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
-    background-size: cover;
-    opacity: 0.1;
-    z-index: -1;
-  }
-
-  .marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-  }
-
-  .marquee p {
-    display: inline-block;
-    font-size: 1.2rem;
-    color: #4c0a30;
-    font-weight: 600;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  }
-
-  @media (max-width: 767px) {
-    .marquee p {
-      font-size: 1rem;
-    }
-  }
-  /* Workshop Notice Styles
-.workshop-notice {
-  margin-top: 125px; Default margin-top for larger screens
-} */
-
-/* Media Queries for Mobile Devices */
-
-/* Small mobile devices (e.g., iPhone SE, smaller Androids, up to 360px width) */
-@media only screen and (max-width: 360px) {
-  .workshop-notice {
-    margin-top: 60px; /* Reduced margin for compact screens */
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 50px;
   }
 }
 
-/* Medium mobile devices (e.g., iPhone XR, iPhone 11, Pixel, 361px to 414px) */
-@media only screen and (min-width: 361px) and (max-width: 414px) {
-  .workshop-notice {
-    margin-top: 230px; /* Adjusted for iPhone XR and similar */
+@media (max-width: 600px) {
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+  .faculty-section {
+    padding: 50px 10px;
+    margin-top: 196px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
   }
 }
-
-/* Larger mobile devices (e.g., iPhone 12 Pro Max, Galaxy Note, 415px to 576px) */
-@media only screen and (min-width: 415px) and (max-width: 576px) {
-  .workshop-notice {
-    margin-top: 100px; /* Slightly larger margin for bigger mobile screens */
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .faculty-section {
+    padding: 60px 15px;
   }
 }
+  </style>
 
-/* Tablets and larger devices (above 576px, keep default margin) */
 
-</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -644,7 +635,7 @@
         <div class="col-md-6 align-self-center">
           <div class="copyright-text">
             <p>© 2025 APSOPRS 2026. All Rights Reserved</p>
-            
+           
           </div>
         </div>
         <div class="col-md-6">
@@ -680,7 +671,7 @@
     </div>
   </footer>
   <style>
-   .footer-main {
+    .footer-main {
       padding-top: 38px ;
       padding-bottom: 0px;
       background-color: #8e1179;
@@ -753,6 +744,7 @@
       margin-bottom: 8px;
       font-size: 1rem;
     }
+    
     .contact-list p {
       margin: 5px 0;
       padding-left: 25px;
@@ -848,19 +840,19 @@
   <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="js/custom.js"></script>
+  
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- Popper.js (required for Bootstrap tooltips and popovers) -->
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+ 
+   <!-- Bootstrap JS -->
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-  <!-- Popper.js (required for Bootstrap tooltips and popovers) -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
-  <script>
+   <script>
     $(document).ready(function () {
       // Close navbar when clicking outside
       $(document).click(function (event) {
@@ -878,9 +870,7 @@
         }
       });
     });
-  </script>
-  
- 
+</script>
   
   </body>
   </html>

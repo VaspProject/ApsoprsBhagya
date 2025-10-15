@@ -68,6 +68,26 @@
           float: none;
         }
       }
+      /* Keep your existing CSS — just add below */
+.logo-before-right img {
+  max-height: 88px; /* match your other logos */
+  width: 100%;
+}
+
+/* Optional: tighten spacing between right-side logos */
+.logo-before-right,
+.logo-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* adjust spacing between them */
+}
+
+/* You can group right-side logos if needed */
+.logo-right-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
   </style>
 
 </head>
@@ -89,8 +109,11 @@
         <div class="logo-center">
           <img src="images/icon/centerlogo.png" alt="Center Logo">
         </div>
+        <div class="logo-before-right">
+          <img src="images/icon/Opai-Logo.png" alt="New Logo">
+        </div>
         <div class="logo-right">
-          <img src="images/icon/Opai-Logo.png" alt="Right Logo">
+          <img src="images/icon/sankarlogo.png" alt="Right Logo">
         </div>
       </div>
     </div>
@@ -117,7 +140,7 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="apsoprs-council-member.html">APSOPRS Council Members</a>
               <a class="dropdown-item" href="OPAI.html">OPAI Council Members</a>
-              <a class="dropdown-item" href="apsoprs-india-grp.html">Conference Organizing Committee APSOPRS 2026</a>
+              <a class="dropdown-item" href="apsoprs-india-grp.html">APSOPRS 2026 India Organizing Committee</a>
               <a class="dropdown-item" href="loc.html">Local Advisory Committee </a>
             </div>
           </li>
@@ -213,7 +236,7 @@
   .page-title {
     height: 150px !important;
     padding: 16px;
-    top: 281px !important;
+    top: 389px !important;
   }
 
   .page-title h3 {
@@ -380,7 +403,7 @@
 /* Medium mobile devices (e.g., iPhone XR, iPhone 11, Pixel, 361px to 414px) */
 @media only screen and (min-width: 361px) and (max-width: 414px) {
   .tour-section {
-    margin-top: 259px; /* Specified margin for iPhone XR and similar */
+    margin-top: 367px; /* Specified margin for iPhone XR and similar */
     padding: 30px; /* Adjusted padding for medium screens */
   }
 }

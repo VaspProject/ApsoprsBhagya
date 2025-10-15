@@ -248,7 +248,7 @@
   }
 
   .navbar {
-    top: 243px;
+    top: 351px;
   }
 }
 
@@ -279,9 +279,10 @@
 }
 
 .logo-left img, .logo-right img {
-  height: 113%;
+  height: 100%;
   width: auto;
   object-fit: contain;
+  margin-bottom: 17px;
 }
 
 /* Dropdown hover behavior */

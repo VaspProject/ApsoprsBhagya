@@ -31,8 +31,33 @@
   <link href="images/Capture.PNG" rel="shortcut icon">
 
   <style>
-    
-    .logo-container {
+   
+   /* Keep your existing CSS — just add below */
+.logo-before-right img {
+  max-height: 88px; /* match your other logos */
+  width: 100%;
+}
+
+/* Optional: tighten spacing between right-side logos */
+.logo-before-right,
+.logo-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* adjust spacing between them */
+}
+
+/* You can group right-side logos if needed */
+.logo-right-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+
+
+  .logo-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,8 +114,11 @@
         <div class="logo-center">
           <img src="images/icon/centerlogo.png" alt="Center Logo">
         </div>
+        <div class="logo-before-right">
+          <img src="images/icon/Opai-Logo.png" alt="New Logo">
+        </div>
         <div class="logo-right">
-          <img src="images/icon/Opai-Logo.png" alt="Right Logo">
+          <img src="images/icon/sankarlogo.png" alt="Right Logo">
         </div>
       </div>
     </div>
@@ -117,7 +145,7 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="apsoprs-council-member.html">APSOPRS Council Members</a>
               <a class="dropdown-item" href="OPAI.html">OPAI Council Members</a>
-              <a class="dropdown-item" href="apsoprs-india-grp.html">Conference Organizing Committee APSOPRS 2026</a>
+              <a class="dropdown-item" href="apsoprs-india-grp.html">APSOPRS 2026 India Organizing Committee</a>
               <a class="dropdown-item" href="loc.html">Local Advisory Committee </a>
             </div>
           </li>
@@ -214,7 +242,7 @@
   .page-title {
     height: 150px !important;
     padding: 16px;
-    top: 281px !important;
+    top: 389px !important;
   }
 
   .page-title h3 {
@@ -278,7 +306,7 @@
 /* Medium mobile devices (e.g., iPhone XR, iPhone 11, Pixel, 361px to 414px) */
 @media only screen and (min-width: 361px) and (max-width: 414px) {
   .section-accom {
-    margin-top: 239px; /* Specified margin for iPhone XR and similar */
+    margin-top: 344px; /* Specified margin for iPhone XR and similar */
     padding: 30px; /* Adjusted padding for medium screens */
   }
 }
@@ -338,6 +366,232 @@
       </div>
     </div>
   </div>
+
+  <section class="venue-section">
+    <div class="container">
+      <!-- <h2>APSOPRS 2026 - Venue</h2> -->
+      <h3>APSOPRS 2026 - Venue - Mayfair Spring Valley Resort</h3>
+      <p class="early-bird">🌸 Early Bird Offer till <strong>31st December 2025</strong></p>
+  
+      <!-- Table Section -->
+      <div class="table-responsive">
+        <table class="venue-table">
+          <thead>
+            <tr>
+              <th>Room Category</th>
+              <th>Single Room Per Night</th>
+              <th>Double Room Per Night</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Executive Room</td>
+              <td>₹11,000 + GST</td>
+              <td>₹11,000 + GST</td>
+            </tr>
+            <tr>
+              <td>King Deluxe Room</td>
+              <td>₹11,000 + GST</td>
+              <td>₹11,000 + GST</td>
+            </tr>
+            <tr>
+              <td>Twin Deluxe Room</td>
+              <td>₹12,000 + GST</td>
+              <td>₹12,000 + GST</td>
+            </tr>
+            <tr>
+              <td>Premium Room</td>
+              <td>₹12,000 + GST</td>
+              <td>₹12,000 + GST</td>
+            </tr>
+            <tr>
+              <td>Tea Garden Room</td>
+              <td>₹12,500 + GST</td>
+              <td>₹12,500 + GST</td>
+            </tr>
+            <tr>
+              <td>Deluxe Cottages</td>
+              <td colspan="2">Contact us for rates and availability</td>
+            </tr>
+            <tr>
+              <td>Pool Cottage</td>
+              <td colspan="2">Contact us for rates and availability</td>
+            </tr>
+            <tr>
+              <td>Suites</td>
+              <td colspan="2">Contact us for rates and availability</td>
+            </tr>
+            <!-- — -->
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- Note Section -->
+      <div class="info-box">
+        <h4>Note:</h4>
+        <ul>
+          <li><strong>3 Nights Package:</strong> Check-in: Wednesday, November 18, 2026 | Check-out: Saturday, November 21, 2026.</li>
+          <li>GST 18% additional on the above tariff.</li>
+          <li>International transaction charges additional.</li>
+        </ul>
+      </div>
+  
+      <!-- Booking Instructions -->
+      <div class="info-box">
+        <h4>Booking Instructions</h4>
+        <ol>
+          <li>Rooms are allotted on a first-come, first-served basis.</li>
+          <li>Booking closes once guaranteed rooms are filled — book early to avoid disappointment.</li>
+        </ol>
+      </div>
+  
+      <!-- Accommodation Details -->
+      <div class="info-box">
+        <h4>Accommodation Details</h4>
+        <ul>
+          <li>Hotel check-in time: 2:00 PM | Check-out time: 12:00 Noon</li>
+          <li>Early check-in & Late check-out: Subject to availability and additional charges as per hotel policy.</li>
+          <li>Extras (e.g., extra bed, room service, laundry, minibar, phone bills, etc.) are not included.</li>
+          <li>Package includes: Room stay and breakfast.</li>
+        </ul>
+      </div>
+  
+      <!-- Cancellation Policy -->
+      <div class="info-box">
+        <h4>Cancellation Policy</h4>
+        <ul>
+          <li>Once the booking is confirmed, the GST (Govt Service Charge) charges are non-refundable.</li>
+          <li>Cancellations made before 2 months from the booking date will be eligible for a full refund after deducting the GST amount.</li>
+          <li>Cancellations made within 2 months from the booking date will be eligible for a 50% refund.</li>
+          <li>Cancellations made within 1 month from the booking date will not be eligible for any refund.</li>
+        </ul>
+      </div>
+  
+    </div>
+  </section>
+  
+  <style>
+  /* ===== Venue Section Styling ===== */
+  .venue-section {
+    
+    padding: 60px 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+  }
+  
+  .venue-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #8e1179;
+    margin-bottom: 5px;
+  }
+  
+  .venue-section h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .venue-section .early-bird {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #141212;
+    margin-bottom: 25px;
+  }
+  
+  /* ===== Table Styling ===== */
+  .venue-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* background: white; */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+  
+  .venue-table thead {
+    background: #8e1179;
+    color: white;
+  }
+  
+  .venue-table th, .venue-table td {
+    padding: 14px 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  .venue-table tbody tr:hover {
+    background-color: #f6edf5;
+    transition: 0.3s;
+  }
+  
+  .venue-table td[colspan="2"] {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* ===== Info Boxes ===== */
+  .info-box {
+    /* background: white; */
+    border-left: 5px solid #8e1179;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .info-box h4 {
+    color: #8e1179;
+    margin-bottom: 10px;
+  }
+  
+  .info-box ul, .info-box ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .info-box li {
+    line-height: 1.6;
+    margin-bottom: 5px;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 768px) {
+    .venue-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .venue-table th, .venue-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .info-box {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .venue-section {
+      padding: 40px 10px;
+    }
+  
+    .venue-table {
+      font-size: 0.85rem;
+    }
+  
+    .venue-section .early-bird {
+      font-size: 1rem;
+    }
+  }
+  </style>
+
+
+
+
+
 </div>
 
   
@@ -736,15 +990,7 @@
       display: inline-block;
       margin-top: 0px;
   }
-
- 
- 
-</style>
-
- 
-    <style>
-        
-         .separator-icon i {
+  .separator-icon i {
             color: black !important;
             font-size: 1rem;
             animation: pulse 2s infinite;
@@ -909,7 +1155,7 @@
 }*/
 
 
-    </style>
+</style>
 
    
 
