@@ -640,6 +640,7 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  margin-top: 8px;
 }
 
 @media (max-width: 1024px) {
