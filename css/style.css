@@ -301,7 +301,7 @@ button:hover {
 .bg-sponsors {
   background: url(../images/background/sponsors-bg.jpg) fixed no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center center;    
 }
 
 .bg-subscribe {
@@ -926,6 +926,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #e6e6e6;
   margin-bottom: 45px;
 }
+
 
 .cta-ticket .image-block {
   position: absolute;
