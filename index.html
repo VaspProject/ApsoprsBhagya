@@ -66,7 +66,7 @@ body::before {
           <img src="images/icon/APSOPRSlogo1.png" alt="Left Logo">
         </div>
         <div class="logo-center">
-          <img src="images/icon/centerlogo.png" alt="Center Logo">
+          <img src="images/icon/middle.png" alt="Center Logo">
         </div>
         <div class="logo-before-right">
           <img src="images/icon/Opai-Logo.png" alt="New Logo">
@@ -145,8 +145,12 @@ body::before {
               <a class="dropdown-item" href="#">Offline Registration form</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#">Faculty</a>
+            <div class="dropdown-menu" style="left: -78px;">
+              <a class="dropdown-item" href="international-faculty.html">International Faculty</a>
+              <a class="dropdown-item" href="#">National Faculty</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -521,20 +525,7 @@ body::before {
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* .star::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #8e1179;
-  clip-path: polygon(
-    50% 0%, 61% 35%, 98% 35%, 
-    68% 57%, 79% 91%, 50% 70%, 
-    21% 91%, 32% 57%, 2% 35%, 
-    39% 35%
-  );
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transform: rotate(45deg); /* Permanent rotation
-}  */
+
 
 
 .star .text {
@@ -553,6 +544,75 @@ body::before {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+/* For tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .star-container {
+    top: -40px;
+    left: -45px;
+  }
+
+  .star {
+    width: 200px;
+    height: 175px;
+  }
+
+  .star .text {
+    font-size: 12px;
+  }
+}
+
+/* For mobile landscape (max-width: 768px) */
+@media (max-width: 768px) {
+  .star-container {
+    top: -35px;
+    left: -35px;
+  }
+
+  .star {
+    width: 160px;
+    height: 140px;
+  }
+
+  .star .text {
+    font-size: 11px;
+  }
+}
+
+/* For small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .star-container {
+    top: -25px;
+    left: -25px;
+  }
+
+  .star {
+    width: 120px;
+    height: 105px;
+  }
+
+  .star .text {
+    font-size: 10px;
+    padding: 3px;
+  }
+}
+
+/* For very small screens (max-width: 360px) */
+@media (max-width: 360px) {
+  .star-container {
+    top: -20px;
+    left: -20px;
+  }
+
+  .star {
+    width: 100px;
+    height: 88px;
+  }
+
+  .star .text {
+    font-size: 9px;
+  }
+}
 </style>
 
   <!--====  End of Banner  ====-->
@@ -562,7 +622,7 @@ body::before {
 =============================-->
 <div class="scroll-container">
   <div class="scroll-text">
-      Registration compulsory for all
+      Registration compulsory for all – VistaQuest in Oculoplasty – Reconstruct, Redefine, and Revolutionize
   </div>
 </div>
   <section class="countdown-section">
@@ -612,13 +672,30 @@ body::before {
                   <div class="countdown-label-live">Seconds</div>
                 </div>
               </div>
+             
+              <div class="col-lg-8">
+                <div class="video-frame">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    poster=""
+                    class="video-embed">
+                    <source src="images/popupnewvdo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   </section>
-
+<!-- 
   <section class="video-section" data-aos="zoom-in">
     <div class="container">
       <div class="row justify-content-center">
@@ -638,15 +715,19 @@ body::before {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <style>
   .video-frame {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    padding: 3px;
+    /* padding: 3px; */
     background: linear-gradient(45deg, #e99adc, #8e1179);
-    box-shadow: 11px 18px 30px #560348;
+    box-shadow: -1px -2px 16px #560348;
+    height: auto;
+    width: 57%;
+    margin-left: 37px;
+    margin-top: -29px;
   }
   
   .video-embed {
@@ -655,6 +736,60 @@ body::before {
     border-radius: 10px;
     display: block;
   }
+  
+  /* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .video-frame {
+    width: 70%;
+    margin-left: 25px;
+    margin-top: -20px;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .video-frame {
+    width: 85%;
+    margin-left: 20px;
+    margin-top: -15px;
+  }
+
+  .video-embed {
+    border-radius: 8px;
+  }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .video-frame {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    box-shadow: -1px -2px 12px #6d0658;
+  }
+
+  .video-embed {
+    border-radius: 6px;
+  }
+}
+
+/* Small mobile devices (max-width: 360px) */
+@media (max-width: 360px) {
+  .video-frame {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 15px;
+    border-radius: 12px;
+  }
+
+  .video-embed {
+    border-radius: 5px;
+  }
+}
+
+
+
 
   .video-section {
   padding: 40px 0; /* Default padding for larger screens */
@@ -691,7 +826,7 @@ body::before {
   </style>
  
 
-  <section class="section about" data-aos="fade-up" style="padding-top: 40px ;">
+  <section class="section about" data-aos="fade-up" style="padding-top: 40px ; padding-bottom: 18px;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 align-self-center" data-aos="fade-right">
@@ -728,6 +863,10 @@ body::before {
                 <br>
                 Dr. Kasturi Bhattacharjee
                 <br>
+                MS,DNB,FRCS(Edin),FRCS(Glasg),FAICO(Orbit Oculoplasty)
+                <br>
+                Post Graduate (Leadership in Medicine,South East Asia) Harvard Medical School, USA
+                <br>
                 President, The Asia Pacific Society of Ophthalmic Plastic and Reconstructive Surgery
                 <br>
                 (APSOPRS 2024 - 2026)
@@ -747,6 +886,292 @@ body::before {
 
 
   <!--====  End of About  ====-->
+
+  <section class="faculty-section">
+    <div class="container">
+      <h2 class="section-title">APSOPRS 2026 International <span class="alternate"> Faculty</h2></span>
+  
+      <div class="faculty-grid">
+        <!-- Member 1 -->
+        <div class="faculty-card">
+          <div class="faculty-image">
+            <img src="images/maps/international-faculty-pics/Prof. Dr. Robert Goldberg.png" alt="Dr. Rolika Bansal">
+          </div>
+          <h4 class="faculty-name">Prof. Dr. Robert Goldberg</h4>
+          <p>USA</p>
+        </div>
+  
+        <!-- Member 2 -->
+        <div class="faculty-card">
+          <div class="faculty-image">
+            <img src="images/maps/international-faculty-pics/Dr. Don Kikkawa.png" alt="Dr. Ayushi Agarwal">
+          </div>
+          <h4 class="faculty-name">Prof. Dr. Don Kikkawa</h4>
+          <p> USA</p>
+        </div>
+  
+        <!-- Member 3 -->
+        <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Mark J Lucarelli.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Mark J Lucarelli</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Andrew Lee.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr Andrew Lee</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Wendy W lee.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Wendy W. Lee</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Lelio Baldeschi.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Lelio Baldeschi</h4>
+            <p>Europe</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Francesco Quaranta Leoni.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Francesco M. Quaranta-Leoni</h4>
+            <p> Europe</p>
+          </div>
+          
+          
+          
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Bobby S Korn.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Bobby S. Korn</h4>
+            <p> USA</p>
+          </div>
+          <div class="faculty-card ">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Femida Kherani.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Femida Kherani</h4>
+            <p> Canada</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Guy Ben Simon.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Dr Guy Ben Simon</h4>
+            <p> Israel</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Jocelyn Kohn .png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Jocelyn Kohn</h4>
+            <p>  Chile</p>
+          </div>
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Prof. Dr. Daphna Landau.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Daphna Landau</h4>
+            <p>  Israel</p>
+          </div>
+          
+          <div class="faculty-card">
+            <div class="faculty-image">
+              <img src="images/maps/international-faculty-pics/Dr Sachin Salvi - International Faculty UK.png" alt="Dr. Ayushi Agarwal">
+            </div>
+            <h4 class="faculty-name">Prof. Dr. Sachin Salvi</h4>
+            <p>  UK</p>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+
+  <style>
+   /* Put the three "second-last row" cards in grid-row 3 and center them in columns 2–4 */
+.faculty-grid .faculty-card:nth-last-child(5) {
+  grid-row: 3;
+  grid-column: 2;
+  margin-left: -246px;
+}
+.faculty-grid .faculty-card:nth-last-child(4) {
+  grid-row: 3;
+  grid-column: 3;
+  margin-left: -262px;
+}
+.faculty-grid .faculty-card:nth-last-child(3) {
+  grid-row: 3;
+  grid-column: 4;
+  margin-left: -286px;
+}
+
+/* Put the last two cards in grid-row 4 and center them in columns 2–3 */
+.faculty-grid .faculty-card:nth-last-child(2) {
+  grid-row: 4;
+  grid-column: 2;
+}
+.faculty-grid .faculty-card:nth-last-child(1) {
+  grid-row: 4;
+  grid-column: 3;
+}
+/* Responsive fix: reset manual placement on smaller screens */
+@media (max-width: 992px) {
+  .faculty-grid .faculty-card:nth-last-child(-n+5) {
+    grid-row: auto !important;
+    grid-column: auto !important;
+  }
+}
+    /* Section styling */
+.faculty-section {
+  padding: 80px 20px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #a032a0;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid layout */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card styling */
+.faculty-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px purple;
+  padding: 0px 20px 0px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 254px;
+}
+
+.faculty-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Image styling */
+.faculty-image {
+  /* background: linear-gradient(135deg, #a032a0, #e47ad1); */
+  border-radius: 50%;
+  padding: 5px;
+  width: 208px;
+  height: 223px;
+  /* margin: 0 auto 15px; */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faculty-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.faculty-card:hover .faculty-image img {
+  transform: scale(1.1);
+}
+
+/* Name styling */
+.faculty-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 22px;
+  margin-bottom: 0px;
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+.faculty-card:hover .faculty-name {
+  transform: scale(0.9);
+  color: #a032a0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .faculty-section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+  .faculty-section {
+    padding: 50px 10px;
+    /* margin-top: 196px; */
+    padding-top: 0px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 20px;
+  }
+  .faculty-section {
+    padding: 60px 15px;
+    padding-top: 0px;
+
+  }
+}
+  </style>
+
+
+
+
+
+
+
+
+
+
 
   <!--==============================
 =            Speakers            =
@@ -1456,10 +1881,12 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
               </a>
               </div>
               <div class="col-6">
+                <a href="contact.html" style="text-decoration: none; color: inherit;">
                 <div class="service-item">
                   <i class="fa fa-user"></i>
-                  <h5>National Faculty </h5>
+                  <h5>Contact Us </h5>
                 </div>
+                </a>
               </div>
               <div class="col-6">
                 <div class="service-item">
@@ -1509,7 +1936,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
 =            Registration Details    =
 ===================================-->
 
-<section class="section">
+<section class="section" style="padding-bottom: 0px;">
   <div class="container">
       <div class="row">
           <div class="col-12">
@@ -1535,8 +1962,8 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                           <thead class="thead-dark">
                               <tr>
                                   <th scope="col" style="vertical-align: unset;">Category</th>
-                                  <th scope="col">Early Bird (till 15th November 2025)</th>
-                                  <th scope="col">16th November to 31st March 2026</th>
+                                  <th scope="col">Super Saver (till 30th November 2025)</th>
+                                  <th scope="col">Early Bird – 1st  December to 31st March 2026</th>
                                   <th scope="col">1st April – 31st October 2026 </th>
                                   <th scope="col">Spot Registration</th>
                               </tr>
@@ -1545,49 +1972,49 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                               <tr>
                                   <th scope="row">APSOPRS members</th>
                                   <td>INR 14,000 + GST</td>
-                                  <td>INR 16,000 + GST</td>
+                                  <td>INR 17,500 + GST</td>
                                   <td>INR 19,000 + GST</td>
                                   <td>INR 22,000 + GST</td>
                               </tr>
                               <tr>
-                                  <th scope="row">APSOPRS + YAPSORS members</th>
+                                  <th scope="row"> YAPSORS members</th>
                                   <td>INR 12,000 + GST</td>
-                                  <td>INR 14,000 + GST</td>
+                                  <td>INR 14,500 + GST</td>
                                   <td>INR 16,000 + GST</td>
                                   <td>INR 20,000 + GST</td>
                               </tr>
                               <tr>
                                   <th scope="row">OPAI members</th>
                                   <td>INR 14,000 + GST</td>
-                                  <td>INR 16,000 + GST</td>
+                                  <td>INR 16,500 + GST</td>
                                   <td>INR 19,000 + GST</td>
                                   <td>INR 22,000 + GST</td>
                               </tr>
                               <tr>
                                   <th scope="row">Non APSOPRS members</th>
                                   <td>INR 16,000 + GST</td>
-                                  <td>INR 18,000 + GST</td>
+                                  <td>INR 18,500 + GST</td>
                                   <td>INR 20,000 + GST</td>
                                   <td>INR 22,000 + GST</td>
                               </tr>
                               <tr>
                                   <th scope="row">Accompany Person</th>
                                   <td>INR 10,000 + GST</td>
-                                  <td>INR 12,000 + GST</td>
+                                  <td>INR 12,500 + GST</td>
                                   <td>INR 14,000 + GST</td>
                                   <td>INR 18,000 + GST</td>
                               </tr>
                               <tr>
                                   <th scope="row">Indian Ophthalmology Residents / Indian Oculoplasty fellows</th>
                                   <td>INR 10,000 + GST</td>
-                                  <td>INR 12,000 + GST</td>
+                                  <td>INR 12,500 + GST</td>
                                   <td>INR 14,000 + GST</td>
                                   <td>INR 18,000 + GST</td>
                               </tr>
                               <tr>
                                   <th scope="row">Associate APSOPRS / OPAI members / related subspecialty members</th>
                                   <td>INR 16,000 + GST</td>
-                                  <td>INR 18,000 + GST</td>
+                                  <td>INR 18,500 + GST</td>
                                   <td>INR 20,000 + GST</td>
                                   <td>INR 22,000 + GST</td>
                               </tr>
@@ -1615,8 +2042,8 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                           <!-- <thead> -->
                               <tr>
                                   <th scope="col" style="vertical-align: unset;">Category</th>
-                                  <th scope="col">Early Bird (till 15th November 2025)</th>
-                                  <th scope="col">16th November to 31st March 2026</th>
+                                  <th scope="col">Super Saver (till 30th November 2025)</th>
+                                  <th scope="col">Early Bird – 1st  December to 31st March 2026</th>
                                   <th scope="col">1st April – 31st October 2026 </th>
                                   <th scope="col">Spot Registration</th>
                               </tr>
@@ -1630,7 +2057,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                                   <td>USD 500</td>
                               </tr>
                               <tr>
-                                  <th scope="row">APSOPRS + YAPSORS members</th>
+                                  <th scope="row">YAPSORS members</th>
                                   <td>USD 300</td>
                                   <td>USD 350</td>
                                   <td>USD 400</td>
@@ -1711,7 +2138,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
   .tariff-btn {
       padding: 12px 20px;
       margin: 5px;
-      background: #e99adc ;
+      background: #e99adc;
       color: white;
       border: none;
       border-radius: 5px;
@@ -1901,13 +2328,13 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
 =            Venue Section         =
 =================================-->
 
-  <section class="section venue" data-aos="fade-up">
+  <section class="section venue" data-aos="fade-up" style="padding-bottom: 0px;">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="section-title text-center">
+          <div class="section-title text-center" style="margin-bottom: 0px;">
             <h3>Conference <span class="alternate">Venue</span></h3>
-            <p class="venue-subtitle"> Mayfair Spring Valley Resort Guwahati, Assam</p>
+            <p class="venue-subtitle"> Mayfair Spring Valley Guwahati, Assam</p>
             <div class="title-separator">
               <span class="separator-line"></span>
               <span class="separator-icon"><i class="fa fa-map-marker"></i></span>
@@ -2831,7 +3258,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
           <div class="col-12">
             <div class="venue-description" data-aos="fade-up">
               <div class="description-content">
-                <p style="text-align: justify;">Situated just a short distance away from the bustling city centre, Mayfair Spring Valley Resort,
+                <p style="text-align: justify;">Situated just a short distance away from the bustling city centre, Mayfair Spring Valley,
                   Guwahati,
                   is a haven nestled in a picturesque valley, surrounded by verdant hills. It combines grandeur,
                   comfort,
@@ -2846,7 +3273,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                   exceptional spa and salon experience. The luxury resort in Guwahati provides top-of-the-line
                   conference
                   and banquet facilities for corporate gatherings and social events.
-                  With its world-class amenities and genuine hospitality, Mayfair Spring Valley Resort, Guwahati,
+                  With its world-class amenities and genuine hospitality, Mayfair Spring Valley, Guwahati,
                   guarantees an unforgettable stay for all esteemed guests.
                   In Mayfair guest will experience Tradition & Modernity.</p>
               </div>
@@ -3273,8 +3700,9 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
           <div class="footer-block">
             <h4><i class="fa fa-building"></i> Conference Secretariat</h4>
             <div class="footer-content">
-              <!-- <img src="images/icon/APSOPRSlogo1.png" alt="Exotic Holidays Logo" style="max-width: 106px; margin-bottom: 10px; background: white;"> -->
+              <!-- <img src="images/icon/nethralaya1.png" alt="Exotic Holidays Logo" style="max-width: 116px; margin-bottom: 4px; background: white;"> -->
               <p>APSOPRS 2026 Guwahati</p>
+              <img src="images/icon/nethralaya1.png" alt="Exotic Holidays Logo" style="max-width: 116px; margin-bottom: 4px; background: white;">
               <p>Sri Sankaradeva Nethralaya</p>
               <p>#96, Basistha Road, Guwahati 781028, Assam</p>
               <p><a href="mailto:apsoprs2026@gmail.com"><i class="fa fa-envelope"></i> apsoprs2026@gmail.com</a></p>
@@ -3284,9 +3712,9 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
         </div>
         <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
           <div class="footer-block">
-            <h4><i class="fa fa-users"></i> Conference Manager</h4>
+            <h4><i class="fa fa-users"></i> Professional Conference Manager</h4>
             <div class="footer-content">
-              <img src="images/icon/footer-logo1.jpg" alt="Exotic Holidays Logo" style="max-width: 108px; margin-bottom: 3px;">
+              <img src="images/icon/footer2nd.png" alt="Exotic Holidays Logo" style="max-width: 134px; margin-bottom: 3px; background: white;">
               <p>Exotic Holidays & Events</p>
               <p>Beltola Tiniali, Guwahati - 781028 Assam</p>
               <p><a href="mailto:info@exoticnortheast.com"><i class="fa fa-envelope"></i> info@exoticnortheast.com</a>
@@ -3396,7 +3824,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
     .footer-block h4 {
       color: #f5e8f5;
       margin-bottom: 25px;
-      font-size: 1.3rem;
+      font-size: 1.19rem;
       font-weight: 600;
       padding-bottom: 15px;
       border-bottom: 2px solid #e6ace6;

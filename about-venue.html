@@ -109,7 +109,7 @@
               <img src="images/icon/APSOPRSlogo1.png" alt="Left Logo" />
             </div>
             <div class="logo-center">
-              <img src="images/icon/centerlogo.png" alt="Center Logo" />
+              <img src="images/icon/middle.png" alt="Center Logo" />
             </div>
             <div class="logo-before-right">
               <img src="images/icon/Opai-Logo.png" alt="New Logo" />
@@ -249,9 +249,16 @@
                   >
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#">Faculty</a>
+                <div class="dropdown-menu" style="left: -78px;">
+                  <a class="dropdown-item" href="international-faculty.html">International Faculty</a>
+                  <a class="dropdown-item" href="#">National Faculty</a>
+                </div>
               </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -267,7 +274,7 @@
     <section
       class="page-title bg-title"
       style="
-        background: url('images/subbanners/About-Venue.png');
+        background: url('images/subbanner/venue.png');
         background-size: cover;
         background-position: center;
         position: relative;
@@ -291,6 +298,25 @@
       </div>
     </section>
     <style>
+       /* body {
+    position: relative;
+    z-index: 1;
+    padding-top: 0px;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background/O9FG550.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.1; 
+    z-index: -1;
+} */
+
+
       @media (max-width: 768px) {
         .page-title {
           height: 350px !important;
@@ -328,12 +354,12 @@
             <div class="content-block">
               <h2>
                 About
-                <span class="alternate">Mayfair Spring Valley Resort</span>
+                <span class="alternate">Mayfair Spring Valley, Guwahati, Assam</span>
               </h2>
               <div class="description-one">
                 <p>
                   Nestled in the picturesque valley of Tepesia, Sonapur, Mayfair
-                  Spring Valley Resort is a serene escape from Guwahati's hustle
+                  Spring Valley is a serene escape from Guwahati's hustle
                   and bustle. Surrounded by verdant hills and lush greenery,
                   this resort offers a tranquil retreat for couples, families,
                   and business travelers alike.
@@ -347,7 +373,7 @@
             <div class="content-block">
               <h2>
                 Amenities at
-                <span class="alternate">Mayfair Spring Valley Resort</span>
+                <span class="alternate">Mayfair Spring Valley, Guwahati, Assam</span>
               </h2>
               <div class="amenities-grid">
                 <div class="amenity-card">
@@ -468,7 +494,7 @@
                 touches. Each room is meticulously designed to provide a
                 luxurious experience, with attention to detail and a focus on
                 comfort and relaxation. Whether you're traveling for business or
-                leisure, Mayfair Spring Valley Resort's luxurious rooms are the
+                leisure, Mayfair Spring Valley's luxurious rooms are the
                 perfect retreat.
               </p>
               <div class="accommodation-gallery">
@@ -524,7 +550,7 @@
         background: #fff;
         padding: 20px;
         border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 12px rgb(191 23 165 / 35%);
         transition: transform 0.3s ease;
       }
 
@@ -679,16 +705,9 @@
             <div class="footer-block">
               <h4><i class="fa fa-building"></i> Conference Secretariat</h4>
               <div class="footer-content">
-                <!-- <img
-                  src="images/icon/APSOPRSlogo1.png"
-                  alt="Exotic Holidays Logo"
-                  style="
-                    max-width: 106px;
-                    margin-bottom: 10px;
-                    background: white;
-                  "
-                /> -->
+                <!-- <img src="images/icon/nethralaya1.png" alt="Exotic Holidays Logo" style="max-width: 116px; margin-bottom: 4px; background: white;"> -->
                 <p>APSOPRS 2026 Guwahati</p>
+                <img src="images/icon/nethralaya1.png" alt="Exotic Holidays Logo" style="max-width: 116px; margin-bottom: 4px; background: white;">
                 <p>Sri Sankaradeva Nethralaya</p>
                 <p>#96, Basistha Road, Guwahati 781028, Assam</p>
                 <p>
@@ -702,13 +721,9 @@
           </div>
           <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
             <div class="footer-block">
-              <h4><i class="fa fa-users"></i> Conference Manager</h4>
+              <h4><i class="fa fa-users"></i>Professional Conference Manager</h4>
               <div class="footer-content">
-                <img
-                  src="images/icon/footer-logo1.jpg"
-                  alt="Exotic Holidays Logo"
-                  style="max-width: 108px; margin-bottom: 3px"
-                />
+                <img src="images/icon/footer2nd.png" alt="Exotic Holidays Logo" style="max-width: 134px; margin-bottom: 3px; background: white;">
                 <p>Exotic Holidays & Events</p>
                 <p>Beltola Tiniali, Guwahati - 781028 Assam</p>
                 <p>
@@ -847,7 +862,7 @@
       .footer-block h4 {
         color: #f5e8f5;
         margin-bottom: 25px;
-        font-size: 1.3rem;
+        font-size: 1.12rem;
         font-weight: 600;
         padding-bottom: 15px;
         border-bottom: 2px solid #e6ace6;

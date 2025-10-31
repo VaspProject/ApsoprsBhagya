@@ -228,9 +228,10 @@
 
 .live-countdown {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  gap: 40px;
+  margin-left: 188px;
+  /* gap: 40px; */
   /* flex-wrap: wrap; */
 }
 
@@ -340,7 +341,8 @@
   }
 
   .live-countdown {
-    gap: 20px;
+    gap: 0px;
+    margin-left: 0px;
   }
 
   .countdown-circle {
@@ -376,6 +378,7 @@
 
   .live-countdown {
     gap: 0px;
+    margin-left: 0px;
   }
 
   .countdown-circle {
