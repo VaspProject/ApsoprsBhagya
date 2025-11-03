@@ -65,10 +65,42 @@ body::before {
   width: 72%;
   max-height: 74px;
 }
+
+/*  Mobile adjustments for each logo */
+@media (max-width: 767.98px) {
+
+/* Left logo */
+.logo-left img {
+  width: 88px;
+  margin-left: -32px;
+}
+
+/*Center logo */
+.logo-center img {
+  max-width: 299px !important;
+  margin-top: -7px;
+  margin-right: 68px;
+}
+
+/* Logo before right */
+.logo-before-right img {
+  width: 57px !important;
+  margin-left: -64px;
+  margin-top: -13px;
+}
+
+/*  Right logo */
+.logo-right img {
+  width: 68px;
+  margin-right: -27px;
+  margin-bottom: 17px;
+}
+}
+   
  /* MOBILE RESPONSIVE CHANGES */
  @media (max-width: 767.98px) {
         .logo-container {
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
         }
 
@@ -273,9 +305,9 @@ body::before {
 
 @media (max-width: 480px) {
   .page-title {
-    height: 150px !important;
+    height: 132px !important;
     padding: 16px;
-    top: 390px !important;
+    top: 143px !important;
   }
 
   .page-title h3 {
@@ -304,8 +336,8 @@ body::before {
 /* Medium mobile devices (e.g., iPhone XR, iPhone 11, Pixel, 361px to 414px) */
 @media only screen and (min-width: 361px) and (max-width: 414px) {
   .section.contact-form {
-    margin-top: 355px; /* Specified margin for iPhone XR and similar */
-    padding: 30px; /* Adjusted padding for medium screens */
+    margin-top: 127px; /* Specified margin for iPhone XR and similar */
+    padding-top: 0px; /* Adjusted padding for medium screens */
   }
 }
 

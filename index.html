@@ -206,11 +206,42 @@ body::before {
   padding: 6px 10px;
   border-radius: 4px;
 }
+
+/*  Mobile adjustments for each logo */
+@media (max-width: 767.98px) {
+
+/* Left logo */
+.logo-left img {
+  width: 88px;
+  margin-left: -32px;
+}
+
+/*Center logo */
+.logo-center img {
+  max-width: 299px !important;
+  margin-top: -7px;
+  margin-right: 68px;
+}
+
+/* Logo before right */
+.logo-before-right img {
+  width: 57px;
+  margin-left: -64px;
+  margin-top: -13px;
+}
+
+/*  Right logo */
+.logo-right img {
+  width: 68px;
+  margin-right: -27px;
+  margin-bottom: 17px;
+}
+}
    
  /* MOBILE RESPONSIVE CHANGES */
  @media (max-width: 767.98px) {
         .logo-container {
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
         }
 
@@ -441,7 +472,7 @@ body::before {
       }
 
       .banner {
-        height: 512px;
+        height: 274px;
         padding: 20px 0;
       }
     }
@@ -725,7 +756,7 @@ body::before {
     background: linear-gradient(45deg, #e99adc, #8e1179);
     box-shadow: -1px -2px 16px #560348;
     height: auto;
-    width: 57%;
+    width: 63%;
     margin-left: 37px;
     margin-top: -29px;
   }
@@ -736,93 +767,35 @@ body::before {
     border-radius: 10px;
     display: block;
   }
-  
-  /* Large tablets / small laptops */
-@media (max-width: 1024px) {
-  .video-frame {
-    width: 70%;
-    margin-left: 25px;
-    margin-top: -20px;
-  }
-}
 
-/* Tablets (max-width: 768px) */
+  /*  Responsive Fix */
 @media (max-width: 768px) {
+  .live-countdown {
+    /* flex-direction: column; 
+    align-items: center; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: max-content;
+  }
+
   .video-frame {
-    width: 85%;
-    margin-left: 20px;
-    margin-top: -15px;
+    order: 3; /* ensure video appears below countdown */
+    width: 30%;
+    margin-top: 20px;
   }
 
-  .video-embed {
-    border-radius: 8px;
+  .star-container {
+    order: 1;
+    margin-bottom: 20px;
   }
+/* 
+  .countdown-item-live,
+  .countdown-separator {
+    order: 2; countdown stays in one row
+  } */
 }
-
-/* Mobile devices (max-width: 480px) */
-@media (max-width: 480px) {
-  .video-frame {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    box-shadow: -1px -2px 12px #6d0658;
-  }
-
-  .video-embed {
-    border-radius: 6px;
-  }
-}
-
-/* Small mobile devices (max-width: 360px) */
-@media (max-width: 360px) {
-  .video-frame {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 15px;
-    border-radius: 12px;
-  }
-
-  .video-embed {
-    border-radius: 5px;
-  }
-}
-
-
-
-
-  .video-section {
-  padding: 40px 0; /* Default padding for larger screens */
-}
-/* Media Queries for Mobile Devices */
-
-/* Small mobile devices (e.g., iPhone SE, smaller Androids, up to 360px width) */
-@media only screen and (max-width: 360px) {
-  .video-section {
-    padding: 0; /* Remove padding for small mobile screens */
-  }
-}
-
-/* Medium mobile devices (e.g., iPhone XR, iPhone 11, Pixel, 361px to 414px) */
-@media only screen and (min-width: 361px) and (max-width: 414px) {
-  .video-section {
-    padding: 0; /* Remove padding for iPhone XR and similar */
-  }
-}
-
-/* Larger mobile devices (e.g., iPhone 12 Pro Max, Galaxy Note, 415px to 576px) */
-@media only screen and (min-width: 415px) and (max-width: 576px) {
-  .video-section {
-    padding: 0; /* Remove padding for larger mobile screens */
-  }
-}
-
-/* Tablets and larger devices (above 576px, keep default padding) */
-@media only screen and (min-width: 577px) {
-  .video-section {
-    padding: 40px 0; /* Retain default padding for tablets and larger */
-  }
-}
+  
+ 
   </style>
  
 
@@ -972,7 +945,7 @@ body::before {
           </div>
           <div class="faculty-card">
             <div class="faculty-image">
-              <img src="images/maps/international-faculty-pics/Prof. Dr. Jocelyn Kohn .png" alt="Dr. Ayushi Agarwal">
+              <img src="images/maps/international-faculty-pics/ProfDrJocelynKohn1.png" alt="Dr. Ayushi Agarwal">
             </div>
             <h4 class="faculty-name">Prof. Dr. Jocelyn Kohn</h4>
             <p>  Chile</p>
@@ -1029,6 +1002,7 @@ body::before {
   .faculty-grid .faculty-card:nth-last-child(-n+5) {
     grid-row: auto !important;
     grid-column: auto !important;
+    margin-left: -12px;
   }
 }
     /* Section styling */
@@ -1986,7 +1960,7 @@ document.querySelectorAll('.nav-pills .nav-link').forEach(link => {
                               <tr>
                                   <th scope="row">OPAI members</th>
                                   <td>INR 14,000 + GST</td>
-                                  <td>INR 16,500 + GST</td>
+                                  <td>INR 17,500 + GST</td>
                                   <td>INR 19,000 + GST</td>
                                   <td>INR 22,000 + GST</td>
                               </tr>

@@ -96,10 +96,43 @@
   max-height: 74px;
 }
 
+
+/*  Mobile adjustments for each logo */
+@media (max-width: 767.98px) {
+
+/* Left logo */
+.logo-left img {
+  width: 88px;
+  margin-left: -32px;
+}
+
+/*Center logo */
+.logo-center img {
+  max-width: 299px !important;
+  margin-top: -7px;
+  margin-right: 68px;
+}
+
+/* Logo before right */
+.logo-before-right img {
+  width: 57px;
+  margin-left: -64px;
+  margin-top: -13px;
+}
+
+/*  Right logo */
+.logo-right img {
+  width: 68px;
+  margin-right: -27px;
+  margin-bottom: 17px;
+}
+}
+   
+
 /* MOBILE RESPONSIVE CHANGES */
 @media (max-width: 767.98px) {
         .logo-container {
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
         }
 
@@ -277,9 +310,9 @@ body::before {
 
 @media (max-width: 480px) {
   .page-title {
-    height: 150px !important;
+    height: 130px !important;
     padding: 16px;
-    top: 260px !important;
+    top: 13px !important;
   }
 
   .page-title h3 {
@@ -290,7 +323,7 @@ body::before {
 @media (max-width: 575.98px) {
     .container {
         padding: 0 10px;
-        margin-top: 255px;
+        margin-top: 20px;
     }
 
     .title h3 {

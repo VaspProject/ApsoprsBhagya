@@ -232,7 +232,9 @@
   align-items: center;
   margin-left: 188px;
   /* gap: 40px; */
-  /* flex-wrap: wrap; */
+  /* flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-overflow-scrolling: touch; */
 }
 
 .countdown-item-live {

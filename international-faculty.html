@@ -63,10 +63,43 @@ body::before {
   width: 72%;
   max-height: 74px;
 }
+
+
+/*  Mobile adjustments for each logo */
+@media (max-width: 767.98px) {
+
+/* Left logo */
+.logo-left img {
+  width: 88px;
+  margin-left: -32px;
+}
+
+/*Center logo */
+.logo-center img {
+  max-width: 299px !important;
+  margin-top: -7px;
+  margin-right: 68px;
+}
+
+/* Logo before right */
+.logo-before-right img {
+  width: 57px !important;
+  margin-left: -64px;
+  margin-top: -13px;
+}
+
+/*  Right logo */
+.logo-right img {
+  width: 68px;
+  margin-right: -27px;
+  margin-bottom: 17px;
+}
+}
+   
  /* MOBILE RESPONSIVE CHANGES */
  @media (max-width: 767.98px) {
         .logo-container {
-          flex-direction: column;
+          flex-direction: row;
           align-items: center;
         }
 
@@ -258,9 +291,9 @@ body::before {
 
 @media (max-width: 480px) {
   .page-title {
-    height: 150px !important;
+    height: 129px !important;
     padding: 16px;
-    top: 260px !important;
+    top: 13px !important;
   }
 
   .page-title h3 {
@@ -366,7 +399,7 @@ body::before {
           </div>
           <div class="faculty-card">
             <div class="faculty-image">
-              <img src="images/maps/international-faculty-pics/Prof. Dr. Jocelyn Kohn .png" alt="Dr. Ayushi Agarwal">
+              <img src="images/maps/international-faculty-pics/ProfDrJocelynKohn1.png" alt="Dr. Ayushi Agarwal">
             </div>
             <h4 class="faculty-name">Prof. Dr. Jocelyn Kohn</h4>
             <p>  Chile</p>
@@ -423,6 +456,7 @@ body::before {
   .faculty-grid .faculty-card:nth-last-child(-n+5) {
     grid-row: auto !important;
     grid-column: auto !important;
+    margin-left: -12px;
   }
 }
     /* Section styling */
@@ -536,7 +570,8 @@ body::before {
   }
   .faculty-section {
     padding: 50px 10px;
-    margin-top: 196px;
+    margin-top: 28px;
+    padding-top: 0px ;
   }
 
   .section-title {
